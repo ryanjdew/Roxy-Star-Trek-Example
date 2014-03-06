@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sem:triples uri="/en/khan_noonien_singh" xmlns:sem="http://marklogic.com/semantics">
+  <sem:triple>
+    <sem:subject>/en/khan_noonien_singh</sem:subject>
+    <sem:predicate>name</sem:predicate>
+    <sem:object>Khan Noonien Singh</sem:object>
+  </sem:triple>
+  <sem:triple>
+    <sem:subject>/en/khan_noonien_singh</sem:subject>
+    <sem:predicate>/fictional_universe/character_gender</sem:predicate>
+    <sem:object>/en/male</sem:object>
+  </sem:triple>
+  <sem:triple>
+    <sem:subject>/en/khan_noonien_singh</sem:subject>
+    <sem:predicate>/fictional_universe/character_species</sem:predicate>
+    <sem:object>/en/human</sem:object>
+  </sem:triple>
+  <sem:triple>
+    <sem:subject>/en/khan_noonien_singh</sem:subject>
+    <sem:predicate>/fictional_universe/character_species</sem:predicate>
+    <sem:object>/m/05v1ly8</sem:object>
+  </sem:triple>
+  <sem:triple>
+    <sem:subject>/en/khan_noonien_singh</sem:subject>
+    <sem:predicate>/fictional_universe/character_place_of_birth</sem:predicate>
+    <sem:object>/en/earth</sem:object>
+  </sem:triple>
+  <sem:triple>
+    <sem:subject>/en/khan_noonien_singh</sem:subject>
+    <sem:predicate>/fictional_universe/character_romantically_involved_with</sem:predicate>
+    <sem:object>/en/marla_mcgivers</sem:object>
+  </sem:triple>
+</sem:triples>

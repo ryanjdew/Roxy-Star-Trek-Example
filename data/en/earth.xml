@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sem:triples uri="/en/earth" xmlns:sem="http://marklogic.com/semantics">
+  <sem:triple>
+    <sem:subject>/en/earth</sem:subject>
+    <sem:predicate>name</sem:predicate>
+    <sem:object>Earth</sem:object>
+  </sem:triple>
+</sem:triples>

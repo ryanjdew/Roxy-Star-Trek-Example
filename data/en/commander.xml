@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sem:triples uri="/en/commander" xmlns:sem="http://marklogic.com/semantics">
+  <sem:triple>
+    <sem:subject>/en/commander</sem:subject>
+    <sem:predicate>name</sem:predicate>
+    <sem:object>Commander</sem:object>
+  </sem:triple>
+</sem:triples>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sem:triples uri="/en/turkana_iv" xmlns:sem="http://marklogic.com/semantics">
+  <sem:triple>
+    <sem:subject>/en/turkana_iv</sem:subject>
+    <sem:predicate>name</sem:predicate>
+    <sem:object>Turkana IV</sem:object>
+  </sem:triple>
+</sem:triples>

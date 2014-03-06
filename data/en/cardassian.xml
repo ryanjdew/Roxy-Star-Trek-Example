@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sem:triples uri="/en/cardassian" xmlns:sem="http://marklogic.com/semantics">
+  <sem:triple>
+    <sem:subject>/en/cardassian</sem:subject>
+    <sem:predicate>name</sem:predicate>
+    <sem:object>Cardassian</sem:object>
+  </sem:triple>
+</sem:triples>

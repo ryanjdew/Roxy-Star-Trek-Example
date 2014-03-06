@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sem:triples uri="/m/02nwfdy" xmlns:sem="http://marklogic.com/semantics">
+  <sem:triple>
+    <sem:subject>/m/02nwfdy</sem:subject>
+    <sem:predicate>name</sem:predicate>
+    <sem:object>Gia</sem:object>
+  </sem:triple>
+  <sem:triple>
+    <sem:subject>/m/02nwfdy</sem:subject>
+    <sem:predicate>/fictional_universe/character_species</sem:predicate>
+    <sem:object>/en/bajoran</sem:object>
+  </sem:triple>
+</sem:triples>

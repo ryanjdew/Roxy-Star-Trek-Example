@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sem:triples uri="/en/chief_of_security" xmlns:sem="http://marklogic.com/semantics">
+  <sem:triple>
+    <sem:subject>/en/chief_of_security</sem:subject>
+    <sem:predicate>name</sem:predicate>
+    <sem:object>Chief of Security</sem:object>
+  </sem:triple>
+</sem:triples>

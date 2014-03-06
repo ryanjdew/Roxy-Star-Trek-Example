@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sem:triples uri="/en/seven_of_nine" xmlns:sem="http://marklogic.com/semantics">
+  <sem:triple>
+    <sem:subject>/en/seven_of_nine</sem:subject>
+    <sem:predicate>name</sem:predicate>
+    <sem:object>Seven of Nine</sem:object>
+  </sem:triple>
+  <sem:triple>
+    <sem:subject>/en/seven_of_nine</sem:subject>
+    <sem:predicate>/fictional_universe/character_gender</sem:predicate>
+    <sem:object>/en/female</sem:object>
+  </sem:triple>
+  <sem:triple>
+    <sem:subject>/en/seven_of_nine</sem:subject>
+    <sem:predicate>/fictional_universe/character_species</sem:predicate>
+    <sem:object>/en/borg</sem:object>
+  </sem:triple>
+  <sem:triple>
+    <sem:subject>/en/seven_of_nine</sem:subject>
+    <sem:predicate>/fictional_universe/character_species</sem:predicate>
+    <sem:object>/en/human</sem:object>
+  </sem:triple>
+  <sem:triple>
+    <sem:subject>/en/seven_of_nine</sem:subject>
+    <sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
+    <sem:object>/en/starfleet</sem:object>
+  </sem:triple>
+</sem:triples>

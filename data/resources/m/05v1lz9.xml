@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource uri="/m/05v1lz9"><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+      <cts:text xml:lang="en">Ocampa</cts:text>
+      <cts:option>case-insensitive</cts:option>
+      <cts:option>diacritic-insensitive</cts:option>
+      <cts:option>punctuation-insensitive</cts:option>
+      <cts:option>whitespace-insensitive</cts:option>
+      <cts:option>stemmed</cts:option>
+    </cts:word-query></reverse-query><phrase>Ocampa</phrase></resource>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sem:triples uri="/en/united_federation_of_planets" xmlns:sem="http://marklogic.com/semantics">
+  <sem:triple>
+    <sem:subject>/en/united_federation_of_planets</sem:subject>
+    <sem:predicate>name</sem:predicate>
+    <sem:object>United Federation of Planets</sem:object>
+  </sem:triple>
+</sem:triples>

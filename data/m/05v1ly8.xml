@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sem:triples uri="/m/05v1ly8" xmlns:sem="http://marklogic.com/semantics">
+  <sem:triple>
+    <sem:subject>/m/05v1ly8</sem:subject>
+    <sem:predicate>name</sem:predicate>
+    <sem:object>Augment</sem:object>
+  </sem:triple>
+</sem:triples>
