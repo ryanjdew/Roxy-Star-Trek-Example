@@ -1,0 +1,86 @@
+[{
+  "/common/topic/image": {
+    "id": null,
+    "limit": 1,
+    "optional": true
+  },
+  "FBID478:appears_in_these_fictional_universes": [{
+    "id": "/en/star_trek",
+    "name": null,
+    "type": "/fictional_universe/fictional_universe"
+  }],
+  "gender": [{
+    "id": null,
+    "index": null,
+    "limit": 4,
+    "name": null,
+    "optional": true,
+    "sort": "index",
+    "type": "/fictional_universe/character_gender"
+  }],
+  "id": null,
+  "name": null,
+  "s0:type": [{
+    "id": "/fictional_universe/fictional_character",
+    "link": [{
+      "timestamp": [{
+        "optional": true,
+        "type": "/type/datetime",
+        "value": null
+      }],
+      "type": "/type/link"
+    }],
+    "type": "/type/type"
+  }],
+  "sort": "s0:type.link.timestamp.value",
+  "species": [{
+    "id": null,
+    "index": null,
+    "limit": 4,
+    "name": null,
+    "optional": true,
+    "sort": "index",
+    "type": "/fictional_universe/character_species"
+  }],
+  "organizations": [{
+    "id": null,
+    "index": null,
+    "limit": 4,
+    "name": null,
+    "optional": true,
+    "sort": "index",
+    "type": "/fictional_universe/fictional_organization"
+  }],
+  "rank": [{
+    "id": null,
+    "index": null,
+    "limit": 4,
+    "name": null,
+    "optional": true,
+    "sort": "index",
+    "type": "/fictional_universe/character_rank"
+  }],
+  "siblings": [{
+    "id": null,
+    "index": null,
+    "optional": true,
+    "sort": "index",
+    "siblings": [{
+      "id": null,
+      "name": null,
+      "type": "/fictional_universe/fictional_character"
+    }]
+  }],
+  "romantically_involved_with": [{
+    "id": null,
+    "index": null,
+    "optional": true,
+    "sort": "index",
+    "partner": [{
+      "id": null,
+      "name": null,
+      "type": "/fictional_universe/fictional_character"
+    }]
+  }],
+  "type": "/fictional_universe/fictional_character"
+}]

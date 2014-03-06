@@ -1,84 +1,42 @@
-# Roxy
-Roxy (RObust XQuerY Framework) is a lightweight framework for quickly developing well-structured, easily maintained XQuery applications. Roxy was heavily inspired by Ruby On Rails and CakePHP.
+# Semantic Interpreter
+This REST API makes use of MarkLogic's reverse queries and triple index to provide human readable answers to human readable queries. The example content provided is derived from Star Trek character data retrieved from [Freebase][http://freebase.com]
 
-## Getting Help
-To get help with Roxy,
+## Getting Started
 
-* Subscribe to the [Roxy mailing list](http://developer.marklogic.com/mailman/listinfo/roxy)
-* Read up on [the wiki](https://github.com/marklogic/roxy/wiki)
-* Check out the [Tutorials page](https://github.com/marklogic/roxy/wiki/Tutorials)
+Run the following commands for initial setup. 
 
-## Components
-### Roxy Deployer
-Roxy Deployer makes managing MarkLogic application easy. Simply edit a few configuration files and you have full access to create and deploy applications to MarkLogic servers, local or remote. Roxy Deployer is written in Ruby and is easily extended to add additional functionality.
+<pre><code>ml local bootstrap</code></pre>
+<pre><code>ml local modules</code></pre>
+<pre><code>ml local modules</code></pre>
 
-### Roxy mVC
-The meat and potatoes of Roxy, the mVC (with a de-emphasis on m) is a light-weight MVC framework fashioned after Ruby on Rails and CakePHP. It relies heavily on **Convention over Configuration**.
+Those commmands will create the semantic-interpreter REST API extension.
 
-### Roxy Unit Tester
-What good is your code if it doesn't work? Testing is paramount to the development process. The Roxy Unit Tester tests XQuery with XQuery. Write your tests in XQuery and run them from the UI or from the command line. Roxy Unit Tester produces JUnit XML output so you can use it with your favorite continuous testing tool.
+The GET method takes a query that is used to return relevant triples. Below is an example of query to determine the who Tash Yar is romantically involved with.
 
-## Requirements
-* MarkLogic ([notes on supported versions](https://github.com/marklogic/roxy/wiki/Supported-MarkLogic-versions)):
-  * MarkLogic 4.x - You need the **Docs** appserver running on port 8000 - this port can be overridden in build.properties
-  * MarkLogic 5.x - You need the **Manage** appserver running on port 8002 - this port can be overridden in build.properties
-  * MarkLogic 6.x - You need the **Manage** appserver running on port 8002 - this port can be overridden in build.properties
-* [Ruby 1.9.3+](http://www.ruby-lang.org/en/) - Required for Roxy Deployer only.
-* [Java (jdk)](http://www.oracle.com/technetwork/java/javase/downloads/index.html) - Only if you wish to run the Roxy Deployer [XQSync](http://developer.marklogic.com/code/xqsync, XQSync) or [RecordLoader](http://developer.marklogic.com/code/recordloader) commands.
-* [Git](http://git-scm.com/downloads) - Required to create a new project using "ml new".
+<pre><code>curl -X GET -H "content-type:application/xml" http://localhost:8050/v1/resources/semantic-interpreter?rs:query=Tasha+Yar+romantically+involved+with</code></pre>
 
-## Getting Started (Quick Version)
-This section describes the quickest way to get started using Roxy.
+Result:
 
-### Assumptions
-* You already have one or more MarkLogic Servers running somewhere that you can access from your computer. If not, get it [here](http://developer.marklogic.com/products).*
-* You know the admin logon to your MarkLogic Server(s)
+<pre><code>&lt;result&gt;
+&lt;query&gt;tasha yar romantically involved with&lt;/query&gt;
+&lt;parsed-query comprehension="1"&gt;
+&lt;match iri="/en/tasha_yar" type="resource"&gt;tasha yar&lt;/match&gt;
+&lt;match iri="/fictional_universe/character_romantically_involved_with" type="predicate"&gt;romantically involved with&lt;/match&gt;
+&lt;/parsed-query&gt;
+&lt;matching-triple&gt;Data romantically involved with Tasha Yar&lt;/matching-triple&gt;
+&lt;matching-triple&gt;Tasha Yar romantically involved with Data&lt;/matching-triple&gt;
+&lt;/result&gt;</code></pre>
 
-### Download Roxy
-`$ git clone git://github.com/marklogic/roxy.git`
+Before doing anything else you can try the a similar query as before, but replace "romantically involved with" with "dating" as below.
 
-### Configure your application
-1. Open a command prompt in the root folder of Roxy
-2. Run ml init to create sample configuration files (must specify --server-version option with a value of 4, 5, 6 or 7)
-  <pre><code>$ ml init app-name --server-version=[version-number]</code></pre>
-3. Modify deploy/build.properties with your application's settings.
+<pre><code>curl -X GET -H "content-type:application/xml" http://localhost:8050/v1/resources/semantic-interpreter?rs:query=Tasha+Yar+dating</code></pre>
 
-<pre><code># Username to authenticate to ML
-user=your-ml-admin-username
-# password for ML authentication
-password=your-ml-admin-password
-# the authentication type for the appserver (digest|basic|application-level)
-authentication-method=application-level
-# the default user to authenticate with. defaults to nobody
-default-user=nobody
-# Specify the server(s) you wish to deploy to here. This tutorial assumes you are using localhost.
-local-server=localhost
-#dev-server=
-#cert-server=
-#prod-server=
-</code></pre>
+You will notice that the results aren't so great/accurate. Fortunately there is a way to fix that.
 
-### Configure MarkLogic Server
-*This step is only needed when database configurations have changed or on a fresh install. In most cases you will not need to restart your server.*
+You can change the words/phrases associated with a resource (subject/object) or predicate. This is done by using the PUT method and passing the uri of the resource or predicate and passing a payload of document-node(element(phrases)) that contains a sequence of element(phrase). The first element(phrase) is used for the display text in the GET method and uses all element(phrase) to build reverse queries to associate with the resource or predicate. 
 
-1. Open a command prompt in the root folder of Roxy.
-  *If your server is not configured as local-server in build.properties then substitute your environment here ( local | dev | prod )*
-2. `$ ml local bootstrap`
-3. Depending on what, if anything, you changed you may need to restart MarkLogic in order to proceed. If you see output telling you to restart...
-  <pre><code>$ ml local restart</code></pre>
+<pre><code>curl -X PUT -H "content-type:application/xml" http://localhost:8050/v1/resources/semantic-interpreter?rs:uri=%2Ffictional_universe%2Fcharacter_romantically_involved_with -d '&lt;phrases&gt;&lt;phrase&gt;romantically involved with&lt;/phrase&gt;&lt;phrase&gt;dating&lt;/phrase&gt;&lt;phrase&gt;courting&lt;/phrase&gt;&lt;/phrases&gt;' --anyauth --user admin:admin</code></pre>
 
-### Deploying Code
-*This step describes how to deploy your Roxy application into your MarkLogic Server modules database. If you have elected to run your code locally out of the filesystem you do not need to do this.*
+Now if you run the query containing "dating" you will see that you now get much better results.
 
-1. Open a command prompt in the root folder of Roxy
-2. `$ ml local deploy modules`
-3. Open your favorite web browser to http://localhost:port
-
-  *Sub in your hostname and port from build.properties*
-
-### Congratulations
-**Congratulations!** You have Roxy running on your server. Now you need to start customizing it.
-
-## Getting Help
-For more information run:
-  `$ ml -h`
+The comprehension attribute on the parsed query is a simple indicator to help you determine how well your query was understood by the system.
