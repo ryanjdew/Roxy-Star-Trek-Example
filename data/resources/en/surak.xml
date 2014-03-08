@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource uri="/en/surak"><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
-      <cts:text xml:lang="en">Surak</cts:text>
-      <cts:option>case-insensitive</cts:option>
-      <cts:option>diacritic-insensitive</cts:option>
-      <cts:option>punctuation-insensitive</cts:option>
-      <cts:option>whitespace-insensitive</cts:option>
-      <cts:option>stemmed</cts:option>
-    </cts:word-query></reverse-query><phrase>Surak</phrase></resource>
+<resource uri="/en/surak"><meta><sem:triples xmlns:sem="http://marklogic.com/semantics">
+      <sem:triple>
+	<sem:subject>/en/surak</sem:subject>
+	<sem:predicate>name</sem:predicate>
+	<sem:object>Surak</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/surak</sem:subject>
+	<sem:predicate>/fictional_universe/character_gender</sem:predicate>
+	<sem:object>/en/male</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/surak</sem:subject>
+	<sem:predicate>/fictional_universe/character_species</sem:predicate>
+	<sem:object>/wikipedia/it/Vulcaniani</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/surak</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Surak is a fictional character in the backstory of the Star Trek television series and franchises. He is portrayed as the most important philosopher in the history of the planet Vulcan. During an Earth-like "modern age", when the Vulcans are technological but emotionally driven and violent, Surak founds a movement which reforms the Vulcan way of thinking and lifestyle and leads to the world of logically-reasoning and emotion-mastering Vulcans known from the TV series. This period in Vulcan history is referred to as the "Time of Awakening".
+The "Time of Awakening" is accompanied by violence unmatched in Vulcan history, according to the Star Trek: Enterprise episode "Awakening" During the "Time of Awakening" a Vulcan schism of those who "sought a return to savage ways" and "marched beneath the raptor's wings" perpetrate a cataclysmic nuclear attack upon Surak and his enlightened society. Soon after Surak's death, these Vulcan recidivists abandon their homeworld to colonize the planets Romulus and Remus. The new society would come to be known as the Romulan Star Empire—where Surak's philosophy of peace and logic survives only as an underground movement within their emotional, warlike society for the next 2,000 years, while flourishing on Vulcan to become its predominant philosophy.</sem:object>
+      </sem:triple>
+    </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+	<cts:text xml:lang="en">Surak</cts:text>
+	<cts:option>case-insensitive</cts:option>
+	<cts:option>diacritic-insensitive</cts:option>
+	<cts:option>punctuation-insensitive</cts:option>
+	<cts:option>whitespace-insensitive</cts:option>
+	<cts:option>stemmed</cts:option>
+      </cts:word-query></reverse-query></meta><name>Surak</name><birth-place/><various-species><species>Vulcan</species></various-species><organizations/><ranks/><description>Surak is a fictional character in the backstory of the Star Trek television series and franchises. He is portrayed as the most important philosopher in the history of the planet Vulcan. During an Earth-like "modern age", when the Vulcans are technological but emotionally driven and violent, Surak founds a movement which reforms the Vulcan way of thinking and lifestyle and leads to the world of logically-reasoning and emotion-mastering Vulcans known from the TV series. This period in Vulcan history is referred to as the "Time of Awakening".
+The "Time of Awakening" is accompanied by violence unmatched in Vulcan history, according to the Star Trek: Enterprise episode "Awakening" During the "Time of Awakening" a Vulcan schism of those who "sought a return to savage ways" and "marched beneath the raptor's wings" perpetrate a cataclysmic nuclear attack upon Surak and his enlightened society. Soon after Surak's death, these Vulcan recidivists abandon their homeworld to colonize the planets Romulus and Remus. The new society would come to be known as the Romulan Star Empire—where Surak's philosophy of peace and logic survives only as an underground movement within their emotional, warlike society for the next 2,000 years, while flourishing on Vulcan to become its predominant philosophy.</description></resource>

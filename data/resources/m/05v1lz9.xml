@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource uri="/m/05v1lz9"><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
-      <cts:text xml:lang="en">Ocampa</cts:text>
-      <cts:option>case-insensitive</cts:option>
-      <cts:option>diacritic-insensitive</cts:option>
-      <cts:option>punctuation-insensitive</cts:option>
-      <cts:option>whitespace-insensitive</cts:option>
-      <cts:option>stemmed</cts:option>
-    </cts:word-query></reverse-query><phrase>Ocampa</phrase></resource>
+<resource uri="/m/05v1lz9"><meta><sem:triples xmlns:sem="http://marklogic.com/semantics">
+      <sem:triple>
+	<sem:subject>/m/05v1lz9</sem:subject>
+	<sem:predicate>name</sem:predicate>
+	<sem:object>Ocampa</sem:object>
+      </sem:triple>
+    </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+	<cts:text xml:lang="en">Ocampa</cts:text>
+	<cts:option>case-insensitive</cts:option>
+	<cts:option>diacritic-insensitive</cts:option>
+	<cts:option>punctuation-insensitive</cts:option>
+	<cts:option>whitespace-insensitive</cts:option>
+	<cts:option>stemmed</cts:option>
+      </cts:word-query></reverse-query></meta><name>Ocampa</name><description/></resource>

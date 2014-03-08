@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource uri="/en/federation_president"><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
-      <cts:text xml:lang="en">Federation President</cts:text>
-      <cts:option>case-insensitive</cts:option>
-      <cts:option>diacritic-insensitive</cts:option>
-      <cts:option>punctuation-insensitive</cts:option>
-      <cts:option>whitespace-insensitive</cts:option>
-      <cts:option>stemmed</cts:option>
-    </cts:word-query></reverse-query><phrase>Federation President</phrase></resource>
+<resource uri="/en/federation_president"><meta><sem:triples xmlns:sem="http://marklogic.com/semantics">
+      <sem:triple>
+	<sem:subject>/en/federation_president</sem:subject>
+	<sem:predicate>name</sem:predicate>
+	<sem:object>Federation President</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/federation_president</sem:subject>
+	<sem:predicate>/fictional_universe/character_gender</sem:predicate>
+	<sem:object>/m/04j3vhk</sem:object>
+      </sem:triple>
+    </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+	<cts:text xml:lang="en">Federation President</cts:text>
+	<cts:option>case-insensitive</cts:option>
+	<cts:option>diacritic-insensitive</cts:option>
+	<cts:option>punctuation-insensitive</cts:option>
+	<cts:option>whitespace-insensitive</cts:option>
+	<cts:option>stemmed</cts:option>
+      </cts:word-query></reverse-query></meta><name>Federation President</name><birth-place/><various-species/><organizations/><ranks/><description/></resource>

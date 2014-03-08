@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource uri="/wikipedia/en_title/Joachim_$0028Star_Trek$0029"><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
-      <cts:text xml:lang="en">Joachim</cts:text>
-      <cts:option>case-insensitive</cts:option>
-      <cts:option>diacritic-insensitive</cts:option>
-      <cts:option>punctuation-insensitive</cts:option>
-      <cts:option>whitespace-insensitive</cts:option>
-      <cts:option>stemmed</cts:option>
-    </cts:word-query></reverse-query><phrase>Joachim</phrase></resource>
+<resource uri="/wikipedia/en_title/Joachim_$0028Star_Trek$0029"><meta><sem:triples xmlns:sem="http://marklogic.com/semantics">
+      <sem:triple>
+	<sem:subject>/wikipedia/en_title/Joachim_$0028Star_Trek$0029</sem:subject>
+	<sem:predicate>name</sem:predicate>
+	<sem:object>Joachim</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/wikipedia/en_title/Joachim_$0028Star_Trek$0029</sem:subject>
+	<sem:predicate>/fictional_universe/character_gender</sem:predicate>
+	<sem:object>/en/male</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/wikipedia/en_title/Joachim_$0028Star_Trek$0029</sem:subject>
+	<sem:predicate>/fictional_universe/character_species</sem:predicate>
+	<sem:object>/en/human</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/wikipedia/en_title/Joachim_$0028Star_Trek$0029</sem:subject>
+	<sem:predicate>/fictional_universe/character_species</sem:predicate>
+	<sem:object>/m/05v1ly8</sem:object>
+      </sem:triple>
+    </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+	<cts:text xml:lang="en">Joachim</cts:text>
+	<cts:option>case-insensitive</cts:option>
+	<cts:option>diacritic-insensitive</cts:option>
+	<cts:option>punctuation-insensitive</cts:option>
+	<cts:option>whitespace-insensitive</cts:option>
+	<cts:option>stemmed</cts:option>
+      </cts:word-query></reverse-query></meta><name>Joachim</name><birth-place/><various-species><species>Human</species><species>Augment</species></various-species><organizations/><ranks/><description/></resource>

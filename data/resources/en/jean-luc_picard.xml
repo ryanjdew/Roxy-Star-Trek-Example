@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource uri="/en/jean-luc_picard"><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
-      <cts:text xml:lang="en">Jean-Luc Picard</cts:text>
-      <cts:option>case-insensitive</cts:option>
-      <cts:option>diacritic-insensitive</cts:option>
-      <cts:option>punctuation-insensitive</cts:option>
-      <cts:option>whitespace-insensitive</cts:option>
-      <cts:option>stemmed</cts:option>
-    </cts:word-query></reverse-query><phrase>Jean-Luc Picard</phrase></resource>
+<resource uri="/en/jean-luc_picard"><meta><sem:triples xmlns:sem="http://marklogic.com/semantics">
+      <sem:triple>
+	<sem:subject>/en/jean-luc_picard</sem:subject>
+	<sem:predicate>name</sem:predicate>
+	<sem:object>Jean-Luc Picard</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/jean-luc_picard</sem:subject>
+	<sem:predicate>/fictional_universe/character_gender</sem:predicate>
+	<sem:object>/en/male</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/jean-luc_picard</sem:subject>
+	<sem:predicate>/fictional_universe/character_species</sem:predicate>
+	<sem:object>/en/human</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/jean-luc_picard</sem:subject>
+	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
+	<sem:object>/en/starfleet</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/jean-luc_picard</sem:subject>
+	<sem:predicate>/fictional_universe/character_rank</sem:predicate>
+	<sem:object>/m/0bd89d</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/jean-luc_picard</sem:subject>
+	<sem:predicate>/fictional_universe/character_romantically_involved_with</sem:predicate>
+	<sem:object>/en/beverly_crusher</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/jean-luc_picard</sem:subject>
+	<sem:predicate>/fictional_universe/character_romantically_involved_with</sem:predicate>
+	<sem:object>/en/lwaxana_troi</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/jean-luc_picard</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Captain Jean-Luc Picard is a Star Trek character portrayed by Patrick Stewart. He appears in the television series Star Trek: The Next Generation and the feature films Star Trek Generations, Star Trek: First Contact, Star Trek: Insurrection and Star Trek: Nemesis. He also made an appearance in the pilot episode of Star Trek: Deep Space Nine.</sem:object>
+      </sem:triple>
+    </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+	<cts:text xml:lang="en">Jean-Luc Picard</cts:text>
+	<cts:option>case-insensitive</cts:option>
+	<cts:option>diacritic-insensitive</cts:option>
+	<cts:option>punctuation-insensitive</cts:option>
+	<cts:option>whitespace-insensitive</cts:option>
+	<cts:option>stemmed</cts:option>
+      </cts:word-query></reverse-query></meta><name>Jean-Luc Picard</name><birth-place/><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks><rank>Captain</rank></ranks><description>Captain Jean-Luc Picard is a Star Trek character portrayed by Patrick Stewart. He appears in the television series Star Trek: The Next Generation and the feature films Star Trek Generations, Star Trek: First Contact, Star Trek: Insurrection and Star Trek: Nemesis. He also made an appearance in the pilot episode of Star Trek: Deep Space Nine.</description></resource>

@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource uri="/en/montgomery_scott"><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
-      <cts:text xml:lang="en">Montgomery Scott</cts:text>
-      <cts:option>case-insensitive</cts:option>
-      <cts:option>diacritic-insensitive</cts:option>
-      <cts:option>punctuation-insensitive</cts:option>
-      <cts:option>whitespace-insensitive</cts:option>
-      <cts:option>stemmed</cts:option>
-    </cts:word-query></reverse-query><phrase>Montgomery Scott</phrase></resource>
+<resource uri="/en/montgomery_scott"><meta><sem:triples xmlns:sem="http://marklogic.com/semantics">
+      <sem:triple>
+	<sem:subject>/en/montgomery_scott</sem:subject>
+	<sem:predicate>name</sem:predicate>
+	<sem:object>Montgomery Scott</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/montgomery_scott</sem:subject>
+	<sem:predicate>/fictional_universe/character_gender</sem:predicate>
+	<sem:object>/en/male</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/montgomery_scott</sem:subject>
+	<sem:predicate>/fictional_universe/character_species</sem:predicate>
+	<sem:object>/en/human</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/montgomery_scott</sem:subject>
+	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
+	<sem:object>/en/starfleet</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/montgomery_scott</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Montgomery Scott is a fictional character in the Star Trek media franchise.</sem:object>
+      </sem:triple>
+    </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+	<cts:text xml:lang="en">Montgomery Scott</cts:text>
+	<cts:option>case-insensitive</cts:option>
+	<cts:option>diacritic-insensitive</cts:option>
+	<cts:option>punctuation-insensitive</cts:option>
+	<cts:option>whitespace-insensitive</cts:option>
+	<cts:option>stemmed</cts:option>
+      </cts:word-query></reverse-query></meta><name>Montgomery Scott</name><birth-place/><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Montgomery Scott is a fictional character in the Star Trek media franchise.</description></resource>

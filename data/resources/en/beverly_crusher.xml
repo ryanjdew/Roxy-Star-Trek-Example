@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource uri="/en/beverly_crusher"><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
-      <cts:text xml:lang="en">Beverly Crusher</cts:text>
-      <cts:option>case-insensitive</cts:option>
-      <cts:option>diacritic-insensitive</cts:option>
-      <cts:option>punctuation-insensitive</cts:option>
-      <cts:option>whitespace-insensitive</cts:option>
-      <cts:option>stemmed</cts:option>
-    </cts:word-query></reverse-query><phrase>Beverly Crusher</phrase></resource>
+<resource uri="/en/beverly_crusher"><meta><sem:triples xmlns:sem="http://marklogic.com/semantics">
+      <sem:triple>
+	<sem:subject>/en/beverly_crusher</sem:subject>
+	<sem:predicate>name</sem:predicate>
+	<sem:object>Beverly Crusher</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/beverly_crusher</sem:subject>
+	<sem:predicate>/fictional_universe/character_gender</sem:predicate>
+	<sem:object>/en/female</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/beverly_crusher</sem:subject>
+	<sem:predicate>/fictional_universe/character_species</sem:predicate>
+	<sem:object>/en/human</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/beverly_crusher</sem:subject>
+	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
+	<sem:object>/en/starfleet</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/beverly_crusher</sem:subject>
+	<sem:predicate>/fictional_universe/character_romantically_involved_with</sem:predicate>
+	<sem:object>/en/jean-luc_picard</sem:object>
+      </sem:triple>
+    </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+	<cts:text xml:lang="en">Beverly Crusher</cts:text>
+	<cts:option>case-insensitive</cts:option>
+	<cts:option>diacritic-insensitive</cts:option>
+	<cts:option>punctuation-insensitive</cts:option>
+	<cts:option>whitespace-insensitive</cts:option>
+	<cts:option>stemmed</cts:option>
+      </cts:word-query></reverse-query></meta><name>Beverly Crusher</name><birth-place/><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description/></resource>

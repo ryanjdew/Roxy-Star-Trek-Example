@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource uri="/en/elim_garak"><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
-      <cts:text xml:lang="en">Elim Garak</cts:text>
-      <cts:option>case-insensitive</cts:option>
-      <cts:option>diacritic-insensitive</cts:option>
-      <cts:option>punctuation-insensitive</cts:option>
-      <cts:option>whitespace-insensitive</cts:option>
-      <cts:option>stemmed</cts:option>
-    </cts:word-query></reverse-query><phrase>Elim Garak</phrase></resource>
+<resource uri="/en/elim_garak"><meta><sem:triples xmlns:sem="http://marklogic.com/semantics">
+      <sem:triple>
+	<sem:subject>/en/elim_garak</sem:subject>
+	<sem:predicate>name</sem:predicate>
+	<sem:object>Elim Garak</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/elim_garak</sem:subject>
+	<sem:predicate>/fictional_universe/character_gender</sem:predicate>
+	<sem:object>/en/male</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/elim_garak</sem:subject>
+	<sem:predicate>/fictional_universe/character_species</sem:predicate>
+	<sem:object>/en/cardassian</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/elim_garak</sem:subject>
+	<sem:predicate>/fictional_universe/character_romantically_involved_with</sem:predicate>
+	<sem:object>/en/tora_ziyal</sem:object>
+      </sem:triple>
+    </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+	<cts:text xml:lang="en">Elim Garak</cts:text>
+	<cts:option>case-insensitive</cts:option>
+	<cts:option>diacritic-insensitive</cts:option>
+	<cts:option>punctuation-insensitive</cts:option>
+	<cts:option>whitespace-insensitive</cts:option>
+	<cts:option>stemmed</cts:option>
+      </cts:word-query></reverse-query></meta><name>Elim Garak</name><birth-place/><various-species><species>Cardassian</species></various-species><organizations/><ranks/><description/></resource>

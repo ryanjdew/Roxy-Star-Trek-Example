@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource uri="/en/kathryn_janeway"><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
-      <cts:text xml:lang="en">Kathryn Janeway</cts:text>
-      <cts:option>case-insensitive</cts:option>
-      <cts:option>diacritic-insensitive</cts:option>
-      <cts:option>punctuation-insensitive</cts:option>
-      <cts:option>whitespace-insensitive</cts:option>
-      <cts:option>stemmed</cts:option>
-    </cts:word-query></reverse-query><phrase>Kathryn Janeway</phrase></resource>
+<resource uri="/en/kathryn_janeway"><meta><sem:triples xmlns:sem="http://marklogic.com/semantics">
+      <sem:triple>
+	<sem:subject>/en/kathryn_janeway</sem:subject>
+	<sem:predicate>name</sem:predicate>
+	<sem:object>Kathryn Janeway</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/kathryn_janeway</sem:subject>
+	<sem:predicate>/fictional_universe/character_gender</sem:predicate>
+	<sem:object>/en/female</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/kathryn_janeway</sem:subject>
+	<sem:predicate>/fictional_universe/character_species</sem:predicate>
+	<sem:object>/en/human</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/kathryn_janeway</sem:subject>
+	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
+	<sem:object>/en/starfleet</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/kathryn_janeway</sem:subject>
+	<sem:predicate>/fictional_universe/character_rank</sem:predicate>
+	<sem:object>/en/admiral</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/kathryn_janeway</sem:subject>
+	<sem:predicate>/fictional_universe/character_rank</sem:predicate>
+	<sem:object>/m/0bd89d</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/kathryn_janeway</sem:subject>
+	<sem:predicate>/fictional_universe/character_romantically_involved_with</sem:predicate>
+	<sem:object>/en/boothby</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/kathryn_janeway</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Kathryn Janeway, played by Kate Mulgrew, is a fictional character in the Star Trek franchise. As the captain of the Starfleet starship USS Voyager, she was the lead character on the television series Star Trek: Voyager, and later a Starfleet admiral, as seen in the 2002 feature film Star Trek: Nemesis. Although other female captains had appeared in previous Star Trek episodes and other media, she is the only one to serve as the central character of a Star Trek TV series.</sem:object>
+      </sem:triple>
+    </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+	<cts:text xml:lang="en">Kathryn Janeway</cts:text>
+	<cts:option>case-insensitive</cts:option>
+	<cts:option>diacritic-insensitive</cts:option>
+	<cts:option>punctuation-insensitive</cts:option>
+	<cts:option>whitespace-insensitive</cts:option>
+	<cts:option>stemmed</cts:option>
+      </cts:word-query></reverse-query></meta><name>Kathryn Janeway</name><birth-place/><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks><rank>Admiral</rank><rank>Captain</rank></ranks><description>Kathryn Janeway, played by Kate Mulgrew, is a fictional character in the Star Trek franchise. As the captain of the Starfleet starship USS Voyager, she was the lead character on the television series Star Trek: Voyager, and later a Starfleet admiral, as seen in the 2002 feature film Star Trek: Nemesis. Although other female captains had appeared in previous Star Trek episodes and other media, she is the only one to serve as the central character of a Star Trek TV series.</description></resource>

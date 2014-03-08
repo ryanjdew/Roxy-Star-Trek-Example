@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource uri="/en/tpol"><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
-      <cts:text xml:lang="en">T'Pol</cts:text>
-      <cts:option>case-insensitive</cts:option>
-      <cts:option>diacritic-insensitive</cts:option>
-      <cts:option>punctuation-insensitive</cts:option>
-      <cts:option>whitespace-insensitive</cts:option>
-      <cts:option>stemmed</cts:option>
-    </cts:word-query></reverse-query><phrase>T'Pol</phrase></resource>
+<resource uri="/en/tpol"><meta><sem:triples xmlns:sem="http://marklogic.com/semantics">
+      <sem:triple>
+	<sem:subject>/en/tpol</sem:subject>
+	<sem:predicate>name</sem:predicate>
+	<sem:object>T'Pol</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/tpol</sem:subject>
+	<sem:predicate>/fictional_universe/character_gender</sem:predicate>
+	<sem:object>/en/female</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/tpol</sem:subject>
+	<sem:predicate>/fictional_universe/character_species</sem:predicate>
+	<sem:object>/wikipedia/it/Vulcaniani</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/tpol</sem:subject>
+	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
+	<sem:object>/en/starfleet</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/tpol</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Commander T'Pol, born 2088, is a fictional character portrayed by Jolene Blalock in Star Trek: Enterprise. She is a Vulcan who serves as the science officer aboard the starship Enterprise.</sem:object>
+      </sem:triple>
+    </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+	<cts:text xml:lang="en">T'Pol</cts:text>
+	<cts:option>case-insensitive</cts:option>
+	<cts:option>diacritic-insensitive</cts:option>
+	<cts:option>punctuation-insensitive</cts:option>
+	<cts:option>whitespace-insensitive</cts:option>
+	<cts:option>stemmed</cts:option>
+      </cts:word-query></reverse-query></meta><name>T'Pol</name><birth-place/><various-species><species>Vulcan</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Commander T'Pol, born 2088, is a fictional character portrayed by Jolene Blalock in Star Trek: Enterprise. She is a Vulcan who serves as the science officer aboard the starship Enterprise.</description></resource>

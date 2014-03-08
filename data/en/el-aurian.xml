@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<sem:triples uri="/en/el-aurian" xmlns:sem="http://marklogic.com/semantics">
-  <sem:triple>
-    <sem:subject>/en/el-aurian</sem:subject>
-    <sem:predicate>name</sem:predicate>
-    <sem:object>El-Aurian</sem:object>
-  </sem:triple>
-</sem:triples>

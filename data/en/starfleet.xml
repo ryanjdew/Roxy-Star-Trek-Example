@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<sem:triples uri="/en/starfleet" xmlns:sem="http://marklogic.com/semantics">
-  <sem:triple>
-    <sem:subject>/en/starfleet</sem:subject>
-    <sem:predicate>name</sem:predicate>
-    <sem:object>Starfleet</sem:object>
-  </sem:triple>
-</sem:triples>

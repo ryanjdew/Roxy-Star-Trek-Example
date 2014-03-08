@@ -19,6 +19,7 @@
     "type": "/fictional_universe/character_gender"
   }],
   "id": null,
+  "mid": null,
   "name": null,
   "s0:type": [{
     "id": "/fictional_universe/fictional_character",
@@ -35,6 +36,7 @@
   "sort": "s0:type.link.timestamp.value",
   "species": [{
     "id": null,
+    "mid": null,
     "index": null,
     "limit": 4,
     "name": null,
@@ -44,6 +46,7 @@
   }],
   "organizations": [{
     "id": null,
+    "mid": null,
     "index": null,
     "limit": 4,
     "name": null,
@@ -53,6 +56,7 @@
   }],
   "rank": [{
     "id": null,
+    "mid": null,
     "index": null,
     "limit": 4,
     "name": null,

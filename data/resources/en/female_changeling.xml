@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource uri="/en/female_changeling"><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
-      <cts:text xml:lang="en">Female Changeling</cts:text>
-      <cts:option>case-insensitive</cts:option>
-      <cts:option>diacritic-insensitive</cts:option>
-      <cts:option>punctuation-insensitive</cts:option>
-      <cts:option>whitespace-insensitive</cts:option>
-      <cts:option>stemmed</cts:option>
-    </cts:word-query></reverse-query><phrase>Female Changeling</phrase></resource>
+<resource uri="/en/female_changeling"><meta><sem:triples xmlns:sem="http://marklogic.com/semantics">
+      <sem:triple>
+	<sem:subject>/en/female_changeling</sem:subject>
+	<sem:predicate>name</sem:predicate>
+	<sem:object>Female Changeling</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/female_changeling</sem:subject>
+	<sem:predicate>/fictional_universe/character_gender</sem:predicate>
+	<sem:object>/en/female</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/female_changeling</sem:subject>
+	<sem:predicate>/fictional_universe/character_species</sem:predicate>
+	<sem:object>/m/023bq0</sem:object>
+      </sem:triple>
+    </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+	<cts:text xml:lang="en">Female Changeling</cts:text>
+	<cts:option>case-insensitive</cts:option>
+	<cts:option>diacritic-insensitive</cts:option>
+	<cts:option>punctuation-insensitive</cts:option>
+	<cts:option>whitespace-insensitive</cts:option>
+	<cts:option>stemmed</cts:option>
+      </cts:word-query></reverse-query></meta><name>Female Changeling</name><birth-place/><various-species><species>Changeling</species></various-species><organizations/><ranks/><description/></resource>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<sem:triples uri="/en/klingon" xmlns:sem="http://marklogic.com/semantics">
-  <sem:triple>
-    <sem:subject>/en/klingon</sem:subject>
-    <sem:predicate>name</sem:predicate>
-    <sem:object>Klingon</sem:object>
-  </sem:triple>
-</sem:triples>

@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource uri="/en/belanna_torres"><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
-      <cts:text xml:lang="en">B'Elanna Torres</cts:text>
-      <cts:option>case-insensitive</cts:option>
-      <cts:option>diacritic-insensitive</cts:option>
-      <cts:option>punctuation-insensitive</cts:option>
-      <cts:option>whitespace-insensitive</cts:option>
-      <cts:option>stemmed</cts:option>
-    </cts:word-query></reverse-query><phrase>B'Elanna Torres</phrase></resource>
+<resource uri="/en/belanna_torres"><meta><sem:triples xmlns:sem="http://marklogic.com/semantics">
+      <sem:triple>
+	<sem:subject>/en/belanna_torres</sem:subject>
+	<sem:predicate>name</sem:predicate>
+	<sem:object>B'Elanna Torres</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/belanna_torres</sem:subject>
+	<sem:predicate>/fictional_universe/character_gender</sem:predicate>
+	<sem:object>/en/female</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/belanna_torres</sem:subject>
+	<sem:predicate>/fictional_universe/character_species</sem:predicate>
+	<sem:object>/en/klingon</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/belanna_torres</sem:subject>
+	<sem:predicate>/fictional_universe/character_species</sem:predicate>
+	<sem:object>/en/human</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/belanna_torres</sem:subject>
+	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
+	<sem:object>/en/starfleet</sem:object>
+      </sem:triple>
+    </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+	<cts:text xml:lang="en">B'Elanna Torres</cts:text>
+	<cts:option>case-insensitive</cts:option>
+	<cts:option>diacritic-insensitive</cts:option>
+	<cts:option>punctuation-insensitive</cts:option>
+	<cts:option>whitespace-insensitive</cts:option>
+	<cts:option>stemmed</cts:option>
+      </cts:word-query></reverse-query></meta><name>B'Elanna Torres</name><birth-place/><various-species><species>Klingon</species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description/></resource>

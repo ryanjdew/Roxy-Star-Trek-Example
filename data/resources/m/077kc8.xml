@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource uri="/m/077kc8"><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
-      <cts:text xml:lang="en">David Marcus</cts:text>
-      <cts:option>case-insensitive</cts:option>
-      <cts:option>diacritic-insensitive</cts:option>
-      <cts:option>punctuation-insensitive</cts:option>
-      <cts:option>whitespace-insensitive</cts:option>
-      <cts:option>stemmed</cts:option>
-    </cts:word-query></reverse-query><phrase>David Marcus</phrase></resource>
+<resource uri="/m/077kc8"><meta><sem:triples xmlns:sem="http://marklogic.com/semantics">
+      <sem:triple>
+	<sem:subject>/m/077kc8</sem:subject>
+	<sem:predicate>name</sem:predicate>
+	<sem:object>David Marcus</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/m/077kc8</sem:subject>
+	<sem:predicate>/fictional_universe/character_gender</sem:predicate>
+	<sem:object>/en/male</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/m/077kc8</sem:subject>
+	<sem:predicate>/fictional_universe/character_species</sem:predicate>
+	<sem:object>/en/human</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/m/077kc8</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>David Marcus is a fictional character in the Star Trek media franchise.</sem:object>
+      </sem:triple>
+    </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+	<cts:text xml:lang="en">David Marcus</cts:text>
+	<cts:option>case-insensitive</cts:option>
+	<cts:option>diacritic-insensitive</cts:option>
+	<cts:option>punctuation-insensitive</cts:option>
+	<cts:option>whitespace-insensitive</cts:option>
+	<cts:option>stemmed</cts:option>
+      </cts:word-query></reverse-query></meta><name>David Marcus</name><birth-place/><various-species><species>Human</species></various-species><organizations/><ranks/><description>David Marcus is a fictional character in the Star Trek media franchise.</description></resource>

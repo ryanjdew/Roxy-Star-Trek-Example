@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<sem:triples uri="/en/la_barre_haute_saone" xmlns:sem="http://marklogic.com/semantics">
-  <sem:triple>
-    <sem:subject>/en/la_barre_haute_saone</sem:subject>
-    <sem:predicate>name</sem:predicate>
-    <sem:object>La Barre</sem:object>
-  </sem:triple>
-</sem:triples>

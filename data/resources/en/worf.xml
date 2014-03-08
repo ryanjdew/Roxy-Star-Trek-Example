@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource uri="/en/worf"><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
-      <cts:text xml:lang="en">Worf</cts:text>
-      <cts:option>case-insensitive</cts:option>
-      <cts:option>diacritic-insensitive</cts:option>
-      <cts:option>punctuation-insensitive</cts:option>
-      <cts:option>whitespace-insensitive</cts:option>
-      <cts:option>stemmed</cts:option>
-    </cts:word-query></reverse-query><phrase>Worf</phrase></resource>
+<resource uri="/en/worf"><meta><sem:triples xmlns:sem="http://marklogic.com/semantics">
+      <sem:triple>
+	<sem:subject>/en/worf</sem:subject>
+	<sem:predicate>name</sem:predicate>
+	<sem:object>Worf</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/worf</sem:subject>
+	<sem:predicate>/fictional_universe/character_gender</sem:predicate>
+	<sem:object>/en/male</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/worf</sem:subject>
+	<sem:predicate>/fictional_universe/character_species</sem:predicate>
+	<sem:object>/en/klingon</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/worf</sem:subject>
+	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
+	<sem:object>/en/starfleet</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/worf</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Worf is a fictional character from the 2008 television short film Star Trek: Chains of Betrayal</sem:object>
+      </sem:triple>
+    </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+	<cts:text xml:lang="en">Worf</cts:text>
+	<cts:option>case-insensitive</cts:option>
+	<cts:option>diacritic-insensitive</cts:option>
+	<cts:option>punctuation-insensitive</cts:option>
+	<cts:option>whitespace-insensitive</cts:option>
+	<cts:option>stemmed</cts:option>
+      </cts:word-query></reverse-query></meta><name>Worf</name><birth-place/><various-species><species>Klingon</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Worf is a fictional character from the 2008 television short film Star Trek: Chains of Betrayal</description></resource>

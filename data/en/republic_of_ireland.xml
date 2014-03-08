@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<sem:triples uri="/en/republic_of_ireland" xmlns:sem="http://marklogic.com/semantics">
-  <sem:triple>
-    <sem:subject>/en/republic_of_ireland</sem:subject>
-    <sem:predicate>name</sem:predicate>
-    <sem:object>Republic of Ireland</sem:object>
-  </sem:triple>
-</sem:triples>

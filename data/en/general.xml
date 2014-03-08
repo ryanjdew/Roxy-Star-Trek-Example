@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<sem:triples uri="/en/general" xmlns:sem="http://marklogic.com/semantics">
-  <sem:triple>
-    <sem:subject>/en/general</sem:subject>
-    <sem:predicate>name</sem:predicate>
-    <sem:object>General</sem:object>
-  </sem:triple>
-</sem:triples>

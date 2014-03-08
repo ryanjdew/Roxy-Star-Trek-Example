@@ -1,9 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource uri="/wikipedia/ru_id/341620"><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
-      <cts:text xml:lang="en">Data</cts:text>
-      <cts:option>case-insensitive</cts:option>
-      <cts:option>diacritic-insensitive</cts:option>
-      <cts:option>punctuation-insensitive</cts:option>
-      <cts:option>whitespace-insensitive</cts:option>
-      <cts:option>stemmed</cts:option>
-    </cts:word-query></reverse-query><phrase>Data</phrase></resource>
+<resource uri="/wikipedia/ru_id/341620"><meta><sem:triples xmlns:sem="http://marklogic.com/semantics">
+      <sem:triple>
+	<sem:subject>/wikipedia/ru_id/341620</sem:subject>
+	<sem:predicate>name</sem:predicate>
+	<sem:object>Data</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/wikipedia/ru_id/341620</sem:subject>
+	<sem:predicate>/fictional_universe/character_gender</sem:predicate>
+	<sem:object>/en/male</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/wikipedia/ru_id/341620</sem:subject>
+	<sem:predicate>/fictional_universe/character_species</sem:predicate>
+	<sem:object>/en/android</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/wikipedia/ru_id/341620</sem:subject>
+	<sem:predicate>/fictional_universe/character_species</sem:predicate>
+	<sem:object>/en/artificial_intelligence</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/wikipedia/ru_id/341620</sem:subject>
+	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
+	<sem:object>/en/starfleet</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/wikipedia/ru_id/341620</sem:subject>
+	<sem:predicate>/fictional_universe/character_sibling</sem:predicate>
+	<sem:object>/en/b_4</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/wikipedia/ru_id/341620</sem:subject>
+	<sem:predicate>/fictional_universe/character_sibling</sem:predicate>
+	<sem:object>/en/lore</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/wikipedia/ru_id/341620</sem:subject>
+	<sem:predicate>/fictional_universe/character_rank</sem:predicate>
+	<sem:object>/en/lieutenant_commander</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/wikipedia/ru_id/341620</sem:subject>
+	<sem:predicate>/fictional_universe/character_romantically_involved_with</sem:predicate>
+	<sem:object>/en/tasha_yar</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/wikipedia/ru_id/341620</sem:subject>
+	<sem:predicate>/fictional_universe/character_romantically_involved_with</sem:predicate>
+	<sem:object>/en/ensign_jenna_dsora</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/wikipedia/ru_id/341620</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Lieutenant Commander Data is a character in the fictional Star Trek universe portrayed by actor Brent Spiner. He appears in the television series Star Trek: The Next Generation and the feature films Star Trek Generations, Star Trek: First Contact, Star Trek: Insurrection and Star Trek: Nemesis.
+Designed and built by Doctor Noonien Soong, Data is a self-aware, sentient, and fully functional android who serves as the second officer and chief operations officer aboard the starships USS Enterprise-D and USS Enterprise-E. His positronic brain allows him impressive computational capabilities. Data experienced ongoing difficulties during the early years of his life with understanding various aspects of human behavior and was unable to feel emotion or understand certain human idiosyncrasies, inspiring him to strive for his own humanity. This goal eventually led to the addition of an "emotion chip", also created by Soong, to Data's positronic net. Though Data's striving for humanity and desire for human emotion is a significant plot point throughout the series, he continually shows a nuanced sense of wisdom, sensitivity, and curiosity.
+Data is in many ways a successor to the original Star Trek's Spock, in that the character offers an "outsider's" perspective on humanity.</sem:object>
+      </sem:triple>
+    </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+	<cts:text xml:lang="en">Data</cts:text>
+	<cts:option>case-insensitive</cts:option>
+	<cts:option>diacritic-insensitive</cts:option>
+	<cts:option>punctuation-insensitive</cts:option>
+	<cts:option>whitespace-insensitive</cts:option>
+	<cts:option>stemmed</cts:option>
+      </cts:word-query></reverse-query></meta><name>Data</name><birth-place/><various-species><species>Android</species><species>Artificial intelligence</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks><rank>Lieutenant Commander</rank></ranks><description>Lieutenant Commander Data is a character in the fictional Star Trek universe portrayed by actor Brent Spiner. He appears in the television series Star Trek: The Next Generation and the feature films Star Trek Generations, Star Trek: First Contact, Star Trek: Insurrection and Star Trek: Nemesis.
+Designed and built by Doctor Noonien Soong, Data is a self-aware, sentient, and fully functional android who serves as the second officer and chief operations officer aboard the starships USS Enterprise-D and USS Enterprise-E. His positronic brain allows him impressive computational capabilities. Data experienced ongoing difficulties during the early years of his life with understanding various aspects of human behavior and was unable to feel emotion or understand certain human idiosyncrasies, inspiring him to strive for his own humanity. This goal eventually led to the addition of an "emotion chip", also created by Soong, to Data's positronic net. Though Data's striving for humanity and desire for human emotion is a significant plot point throughout the series, he continually shows a nuanced sense of wisdom, sensitivity, and curiosity.
+Data is in many ways a successor to the original Star Trek's Spock, in that the character offers an "outsider's" perspective on humanity.</description></resource>

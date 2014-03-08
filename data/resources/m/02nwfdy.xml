@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource uri="/m/02nwfdy"><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
-      <cts:text xml:lang="en">Gia</cts:text>
-      <cts:option>case-insensitive</cts:option>
-      <cts:option>diacritic-insensitive</cts:option>
-      <cts:option>punctuation-insensitive</cts:option>
-      <cts:option>whitespace-insensitive</cts:option>
-      <cts:option>stemmed</cts:option>
-    </cts:word-query></reverse-query><phrase>Gia</phrase></resource>
+<resource uri="/m/02nwfdy"><meta><sem:triples xmlns:sem="http://marklogic.com/semantics">
+      <sem:triple>
+	<sem:subject>/m/02nwfdy</sem:subject>
+	<sem:predicate>name</sem:predicate>
+	<sem:object>Gia</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/m/02nwfdy</sem:subject>
+	<sem:predicate>/fictional_universe/character_species</sem:predicate>
+	<sem:object>/en/bajoran</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/m/02nwfdy</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object/>
+      </sem:triple>
+    </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+	<cts:text xml:lang="en">Gia</cts:text>
+	<cts:option>case-insensitive</cts:option>
+	<cts:option>diacritic-insensitive</cts:option>
+	<cts:option>punctuation-insensitive</cts:option>
+	<cts:option>whitespace-insensitive</cts:option>
+	<cts:option>stemmed</cts:option>
+      </cts:word-query></reverse-query></meta><name>Gia</name><birth-place/><various-species><species>Bajoran</species></various-species><organizations/><ranks/><description/></resource>

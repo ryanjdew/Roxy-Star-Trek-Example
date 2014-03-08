@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource uri="/wikipedia/fr/G$00E9n$00E9ral_Chang"><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
-      <cts:text xml:lang="en">Chang</cts:text>
-      <cts:option>case-insensitive</cts:option>
-      <cts:option>diacritic-insensitive</cts:option>
-      <cts:option>punctuation-insensitive</cts:option>
-      <cts:option>whitespace-insensitive</cts:option>
-      <cts:option>stemmed</cts:option>
-    </cts:word-query></reverse-query><phrase>Chang</phrase></resource>
+<resource uri="/wikipedia/fr/G$00E9n$00E9ral_Chang"><meta><sem:triples xmlns:sem="http://marklogic.com/semantics">
+      <sem:triple>
+	<sem:subject>/wikipedia/fr/G$00E9n$00E9ral_Chang</sem:subject>
+	<sem:predicate>name</sem:predicate>
+	<sem:object>Chang</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/wikipedia/fr/G$00E9n$00E9ral_Chang</sem:subject>
+	<sem:predicate>/fictional_universe/character_gender</sem:predicate>
+	<sem:object>/en/male</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/wikipedia/fr/G$00E9n$00E9ral_Chang</sem:subject>
+	<sem:predicate>/fictional_universe/character_species</sem:predicate>
+	<sem:object>/en/klingon</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/wikipedia/fr/G$00E9n$00E9ral_Chang</sem:subject>
+	<sem:predicate>/fictional_universe/character_rank</sem:predicate>
+	<sem:object>/en/general</sem:object>
+      </sem:triple>
+    </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+	<cts:text xml:lang="en">Chang</cts:text>
+	<cts:option>case-insensitive</cts:option>
+	<cts:option>diacritic-insensitive</cts:option>
+	<cts:option>punctuation-insensitive</cts:option>
+	<cts:option>whitespace-insensitive</cts:option>
+	<cts:option>stemmed</cts:option>
+      </cts:word-query></reverse-query></meta><name>Chang</name><birth-place/><various-species><species>Klingon</species></various-species><organizations/><ranks><rank>General</rank></ranks><description/></resource>

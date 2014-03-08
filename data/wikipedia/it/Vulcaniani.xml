@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<sem:triples uri="/wikipedia/it/Vulcaniani" xmlns:sem="http://marklogic.com/semantics">
-  <sem:triple>
-    <sem:subject>/wikipedia/it/Vulcaniani</sem:subject>
-    <sem:predicate>name</sem:predicate>
-    <sem:object>Vulcan</sem:object>
-  </sem:triple>
-</sem:triples>

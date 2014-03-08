@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource uri="/en/jadzia_dax"><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
-      <cts:text xml:lang="en">Jadzia Dax</cts:text>
-      <cts:option>case-insensitive</cts:option>
-      <cts:option>diacritic-insensitive</cts:option>
-      <cts:option>punctuation-insensitive</cts:option>
-      <cts:option>whitespace-insensitive</cts:option>
-      <cts:option>stemmed</cts:option>
-    </cts:word-query></reverse-query><phrase>Jadzia Dax</phrase></resource>
+<resource uri="/en/jadzia_dax"><meta><sem:triples xmlns:sem="http://marklogic.com/semantics">
+      <sem:triple>
+	<sem:subject>/en/jadzia_dax</sem:subject>
+	<sem:predicate>name</sem:predicate>
+	<sem:object>Jadzia Dax</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/jadzia_dax</sem:subject>
+	<sem:predicate>/fictional_universe/character_gender</sem:predicate>
+	<sem:object>/en/female</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/jadzia_dax</sem:subject>
+	<sem:predicate>/fictional_universe/character_species</sem:predicate>
+	<sem:object>/en/trill</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/jadzia_dax</sem:subject>
+	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
+	<sem:object>/en/starfleet</sem:object>
+      </sem:triple>
+    </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+	<cts:text xml:lang="en">Jadzia Dax</cts:text>
+	<cts:option>case-insensitive</cts:option>
+	<cts:option>diacritic-insensitive</cts:option>
+	<cts:option>punctuation-insensitive</cts:option>
+	<cts:option>whitespace-insensitive</cts:option>
+	<cts:option>stemmed</cts:option>
+      </cts:word-query></reverse-query></meta><name>Jadzia Dax</name><birth-place/><various-species><species>Trill</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description/></resource>

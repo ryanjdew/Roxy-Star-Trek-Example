@@ -1,9 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource uri="/en/christine_chapel"><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
-      <cts:text xml:lang="en">Christine Chapel</cts:text>
-      <cts:option>case-insensitive</cts:option>
-      <cts:option>diacritic-insensitive</cts:option>
-      <cts:option>punctuation-insensitive</cts:option>
-      <cts:option>whitespace-insensitive</cts:option>
-      <cts:option>stemmed</cts:option>
-    </cts:word-query></reverse-query><phrase>Christine Chapel</phrase></resource>
+<resource uri="/en/christine_chapel"><meta><sem:triples xmlns:sem="http://marklogic.com/semantics">
+      <sem:triple>
+	<sem:subject>/en/christine_chapel</sem:subject>
+	<sem:predicate>name</sem:predicate>
+	<sem:object>Christine Chapel</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/christine_chapel</sem:subject>
+	<sem:predicate>/fictional_universe/character_gender</sem:predicate>
+	<sem:object>/en/female</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/christine_chapel</sem:subject>
+	<sem:predicate>/fictional_universe/character_species</sem:predicate>
+	<sem:object>/en/human</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/christine_chapel</sem:subject>
+	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
+	<sem:object>/en/starfleet</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/christine_chapel</sem:subject>
+	<sem:predicate>/fictional_universe/character_rank</sem:predicate>
+	<sem:object>/en/lieutenant</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/christine_chapel</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Christine Chapel is a fictional character in the original Star Trek series, and in two of the films based on it. She was played by Majel Barrett.
+The character was written for Barrett by Gene Roddenberry, after a previous character that he had written for her, Number One, had been dropped. Christine Chapel made her debut in the first season episode "The Naked Time". She was established as a regular character shortly afterward in the episode "What Are Little Girls Made Of?".</sem:object>
+      </sem:triple>
+    </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+	<cts:text xml:lang="en">Christine Chapel</cts:text>
+	<cts:option>case-insensitive</cts:option>
+	<cts:option>diacritic-insensitive</cts:option>
+	<cts:option>punctuation-insensitive</cts:option>
+	<cts:option>whitespace-insensitive</cts:option>
+	<cts:option>stemmed</cts:option>
+      </cts:word-query></reverse-query></meta><name>Christine Chapel</name><birth-place/><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks><rank>Lieutenant</rank></ranks><description>Christine Chapel is a fictional character in the original Star Trek series, and in two of the films based on it. She was played by Majel Barrett.
+The character was written for Barrett by Gene Roddenberry, after a previous character that he had written for her, Number One, had been dropped. Christine Chapel made her debut in the first season episode "The Naked Time". She was established as a regular character shortly afterward in the episode "What Are Little Girls Made Of?".</description></resource>

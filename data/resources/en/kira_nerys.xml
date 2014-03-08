@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resource uri="/en/kira_nerys"><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
-      <cts:text xml:lang="en">Kira Nerys</cts:text>
-      <cts:option>case-insensitive</cts:option>
-      <cts:option>diacritic-insensitive</cts:option>
-      <cts:option>punctuation-insensitive</cts:option>
-      <cts:option>whitespace-insensitive</cts:option>
-      <cts:option>stemmed</cts:option>
-    </cts:word-query></reverse-query><phrase>Kira Nerys</phrase></resource>
+<resource uri="/en/kira_nerys"><meta><sem:triples xmlns:sem="http://marklogic.com/semantics">
+      <sem:triple>
+	<sem:subject>/en/kira_nerys</sem:subject>
+	<sem:predicate>name</sem:predicate>
+	<sem:object>Kira Nerys</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/kira_nerys</sem:subject>
+	<sem:predicate>/fictional_universe/character_gender</sem:predicate>
+	<sem:object>/en/female</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/kira_nerys</sem:subject>
+	<sem:predicate>/fictional_universe/character_species</sem:predicate>
+	<sem:object>/en/bajoran</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/kira_nerys</sem:subject>
+	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
+	<sem:object>/en/starfleet</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/kira_nerys</sem:subject>
+	<sem:predicate>/fictional_universe/character_rank</sem:predicate>
+	<sem:object>/en/major</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/kira_nerys</sem:subject>
+	<sem:predicate>/fictional_universe/character_rank</sem:predicate>
+	<sem:object>/en/commander</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/kira_nerys</sem:subject>
+	<sem:predicate>/fictional_universe/character_rank</sem:predicate>
+	<sem:object>/m/0bd89d</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/kira_nerys</sem:subject>
+	<sem:predicate>/fictional_universe/character_romantically_involved_with</sem:predicate>
+	<sem:object>/en/bareil_antos</sem:object>
+      </sem:triple>
+    </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+	<cts:text xml:lang="en">Kira Nerys</cts:text>
+	<cts:option>case-insensitive</cts:option>
+	<cts:option>diacritic-insensitive</cts:option>
+	<cts:option>punctuation-insensitive</cts:option>
+	<cts:option>whitespace-insensitive</cts:option>
+	<cts:option>stemmed</cts:option>
+      </cts:word-query></reverse-query></meta><name>Kira Nerys</name><birth-place/><various-species><species>Bajoran</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks><rank>Major</rank><rank>Commander</rank><rank>Captain</rank></ranks><description/></resource>

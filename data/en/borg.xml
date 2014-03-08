@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<sem:triples uri="/en/borg" xmlns:sem="http://marklogic.com/semantics">
-  <sem:triple>
-    <sem:subject>/en/borg</sem:subject>
-    <sem:predicate>name</sem:predicate>
-    <sem:object>Borg</sem:object>
-  </sem:triple>
-</sem:triples>
