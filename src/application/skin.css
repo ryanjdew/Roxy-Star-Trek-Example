@@ -1,0 +1,223 @@
+/*
+Copyright 2002-2014 MarkLogic Corporation.  All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+/*  DUSK THEME */
+body {
+  color: rgb(50,50,50);
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: rgb(242,242,242);
+}
+body p {
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+  color: rgb(75,75,75);
+  font-weight: normal;
+}
+a {
+    color: #008CFF;
+    text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a.external-link {
+  color: rgb(0,100,160);
+}
+#logo {
+  font-weight:bold;
+  font-size:24px;
+  line-height:28px;
+}
+#logo a {
+  color: rgb(130,130,130);
+  text-decoration: none;
+}
+.user {
+  color: rgb(130,130,130);
+  text-align: right;
+  padding: 10px;
+}
+.content-background {
+  border-right-color: rgb(222,222,222);
+  background: white;
+}
+.header,
+.footer {
+  color: rgb(75,75,75);
+  background: rgb(210,210,210);
+}
+.header {
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+}
+#content.subpage #content-area-container {
+	width: 984px;	
+	margin-left:0px;
+}
+#content h2 {
+	margin: 14px 4px;
+}
+.footer {
+  color: rgb(150,150,150);
+  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+}
+.footer a {
+  color: rgb(100,100,100);
+}
+
+.footer a:hover {
+  color: rgb(50,50,50);
+}
+#footer p {
+  padding: 14px;
+}
+.pipe {
+  border-left: 1px solid rgb(175,175,175);
+  margin-left: 6px;
+  padding-right: 6px;
+}
+.copyright {
+  float: right;
+}
+#search, #sidebar-container, #widget-bar, #topbar, #content-area-container, #footer, #widget-bar-01, #widget-bar-02, #widget-box {
+	background:none repeat scroll 0 0 gainsboro;
+}	
+.sidebar {
+	font-size:12px;
+	line-height:14px;
+}
+
+/* Chiclet styles in sidebar widget */
+.sidebar .chiclet {
+  color: white;
+  background: url('images/facet_green.png') left top repeat-x;
+}
+.sidebar .chiclet .close-chiclet a {
+  background: url('images/facet_close.png') no-repeat;
+  display:inline-block;
+  width:15px;
+  height:15px;
+}
+.sidebar .chiclet .close-chiclet a:hover {
+	background-position:0 -25px;
+}
+.sidebar .chiclet a:hover.close-chiclet {
+  text-decoration: none;
+}
+.sidebar .chiclet a {
+  outline: none!important;
+}
+
+.error {
+    color:maroon;
+    padding:20px;
+}
+
+.error-detail {
+    color:#999999;
+    padding:5px;
+}
+
+#mlerror {
+    border: 1px solid #CC0000;
+    color: #CC0000;
+    font-weight: bold;
+    padding: 14px 14px 14px 40px;
+    display: none;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 5px;
+    background: url("/application/images/icon-exclamation-red.png")  14px 14px no-repeat #E3E3E3;
+}
+
+#mlerror.shown {
+	  display: block;
+}
+
+.feature-image {
+  border: 3px solid rgb(50,50,50);
+}
+
+/* DETAIL PAGE CONTENT */
+.detail .box {
+  font-size: .9em;
+  background: rgb(229,243,255);
+}
+.detail .box h6 {
+  text-transform:uppercase;
+}
+
+.offscreen-control {
+  background-color: #CB7221;
+  border: solid 1px black;
+}
+
+.offscreen-arrow {
+  background: url("skins/dusk/boxarrow_dusk.png") repeat scroll 0 0 transparent;
+}
+
+.offscreen .tipdown{
+  background: url(skins/dusk/tipdown3-btn_dusk.png) no-repeat 0 -10px;
+}
+
+.offscreen-content {
+  background-color: #CB7221;
+  border: solid 1px black;
+  color: #222;
+}
+.map_title {
+    border-bottom: 1px solid #C8C8C8;
+    background-color: #DCDCDC;
+}
+.map_title h3 {
+    color: #000000;
+}
+
+#loading {
+    z-index:100;
+    
+	left: 50%;
+    top: 50%;
+    
+    margin-top: -40px;
+    margin-left: -40px;
+    position: fixed;
+
+    background-image: url("/application/images/page-updating.gif");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+
+    width: 80px;
+    height: 80px;
+    
+    border:5px solid gainsboro;    
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;    
+    
+    box-shadow: 2px 3px 3px 1px #797979;
+    -moz-box-shadow: 2px 3px 3px 1px #797979;
+    -webkit-box-shadow: 2px 3px 3px 1px #797979;
+}
+
+#bookmarkUrl {
+	float: right;
+}

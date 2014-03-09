@@ -125,18 +125,41 @@
       </fields>
 -->
       <range-element-indexes>
-        <!--
-        Sample for:
-          <name xmlns="http://marklogic.com/ns/sample">bob<name>
-
         <range-element-index>
           <scalar-type>string</scalar-type>
-          <namespace-uri>http://marklogic.com/ns/sample</namespace-uri>
-          <localname>name</localname>
+          <namespace-uri />
+          <localname>birth-place</localname>
           <collation>http://marklogic.com/collation/codepoint</collation>
           <range-value-positions>false</range-value-positions>
         </range-element-index>
--->
+        <range-element-index>
+          <scalar-type>string</scalar-type>
+          <namespace-uri />
+          <localname>organization</localname>
+          <collation>http://marklogic.com/collation/codepoint</collation>
+          <range-value-positions>false</range-value-positions>
+        </range-element-index>
+        <range-element-index>
+          <scalar-type>string</scalar-type>
+          <namespace-uri />
+          <localname>species</localname>
+          <collation>http://marklogic.com/collation/codepoint</collation>
+          <range-value-positions>false</range-value-positions>
+        </range-element-index>
+        <range-element-index>
+          <scalar-type>string</scalar-type>
+          <namespace-uri />
+          <localname>rank</localname>
+          <collation>http://marklogic.com/collation/codepoint</collation>
+          <range-value-positions>false</range-value-positions>
+        </range-element-index>
+        <range-element-index>
+          <scalar-type>string</scalar-type>
+          <namespace-uri />
+          <localname>gender</localname>
+          <collation>http://marklogic.com/collation/codepoint</collation>
+          <range-value-positions>false</range-value-positions>
+        </range-element-index>
       </range-element-indexes>
       <range-element-attribute-indexes>
 <!--

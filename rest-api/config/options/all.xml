@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <search:options xmlns:search="http://marklogic.com/appservices/search">
+  <search:quality-weight>0</search:quality-weight>
   <search:search-option>unfiltered</search:search-option>
   <search:page-length>10</search:page-length>
   <search:term apply="term">
     <search:empty apply="all-results"/>
     <search:term-option>punctuation-insensitive</search:term-option>
-    <search:term-option>stemmed</search:term-option>
   </search:term>
   <search:grammar>
     <search:quotation>"</search:quotation>
@@ -18,6 +18,8 @@
     <search:joiner strength="20" apply="infix" element="cts:and-query" tokenize="word">AND</search:joiner>
     <search:joiner strength="30" apply="infix" element="cts:near-query" tokenize="word">NEAR</search:joiner>
     <search:joiner strength="30" apply="near2" consume="2" element="cts:near-query">NEAR/</search:joiner>
+    <search:joiner strength="32" apply="boost" element="cts:boost-query" tokenize="word">BOOST</search:joiner>
+    <search:joiner strength="35" apply="not-in" element="cts:not-in-query" tokenize="word">NOT_IN</search:joiner>
     <search:joiner strength="50" apply="constraint">:</search:joiner>
     <search:joiner strength="50" apply="constraint" compare="LT" tokenize="word">LT</search:joiner>
     <search:joiner strength="50" apply="constraint" compare="LE" tokenize="word">LE</search:joiner>
@@ -25,12 +27,53 @@
     <search:joiner strength="50" apply="constraint" compare="GE" tokenize="word">GE</search:joiner>
     <search:joiner strength="50" apply="constraint" compare="NE" tokenize="word">NE</search:joiner>
   </search:grammar>
-  <search:sort-order direction="descending">
-    <search:score/>
-  </search:sort-order>
+  <search:constraint name="BirthPlace">
+    <search:range collation="http://marklogic.com/collation/" type="xs:string" facet="true">
+      <search:facet-option>limit=10</search:facet-option>
+      <search:element ns="" name="birth-place"/>
+      <search:fragment-scope>documents</search:fragment-scope>
+    </search:range>
+  </search:constraint>
+  <search:constraint name="Organization">
+    <search:range collation="http://marklogic.com/collation/" type="xs:string" facet="true">
+      <search:facet-option>limit=10</search:facet-option>
+      <search:element ns="" name="organization"/>
+      <search:fragment-scope>documents</search:fragment-scope>
+    </search:range>
+  </search:constraint>
+  <search:constraint name="Rank">
+    <search:range collation="http://marklogic.com/collation/" type="xs:string" facet="true">
+      <search:facet-option>limit=10</search:facet-option>
+      <search:element ns="" name="rank"/>
+      <search:fragment-scope>documents</search:fragment-scope>
+    </search:range>
+  </search:constraint>
+  <search:constraint name="Species">
+    <search:range collation="http://marklogic.com/collation/" type="xs:string" facet="true">
+      <search:facet-option>limit=10</search:facet-option>
+      <search:element ns="" name="species"/>
+      <search:fragment-scope>documents</search:fragment-scope>
+    </search:range>
+  </search:constraint>
+  <search:constraint name="Gender">
+    <search:range collation="http://marklogic.com/collation/" type="xs:string" facet="true">
+      <search:facet-option>limit=10</search:facet-option>
+      <search:element ns="" name="gender"/>
+      <search:fragment-scope>documents</search:fragment-scope>
+    </search:range>
+  </search:constraint>
+  <search:operator name="sort">
+    <search:state name="relevance">
+      <search:sort-order>
+	<search:score/>
+      </search:sort-order>
+    </search:state>
+  </search:operator>
   <search:transform-results apply="snippet">
-    <search:preferred-elements><search:element ns="" name="body"/></search:preferred-elements>
-    <search:max-matches>1</search:max-matches>
+    <search:preferred-elements>
+      <search:element ns="" name="description"/>
+    </search:preferred-elements>
+    <search:max-matches>2</search:max-matches>
     <search:max-snippet-chars>150</search:max-snippet-chars>
     <search:per-match-tokens>20</search:per-match-tokens>
   </search:transform-results>
@@ -38,20 +81,35 @@
   <search:operator name="results">
     <search:state name="compact">
       <search:transform-results apply="snippet">
-        <search:preferred-elements><search:element ns="" name="body"/></search:preferred-elements>
-        <search:max-matches>1</search:max-matches>
-        <search:max-snippet-chars>150</search:max-snippet-chars>
-        <search:per-match-tokens>20</search:per-match-tokens>
+	<search:preferred-elements>
+	  <search:element ns="" name="description"/>
+	</search:preferred-elements>
+	<search:max-matches>2</search:max-matches>
+	<search:max-snippet-chars>150</search:max-snippet-chars>
+	<search:per-match-tokens>20</search:per-match-tokens>
       </search:transform-results>
     </search:state>
     <search:state name="detailed">
       <search:transform-results apply="snippet">
-        <search:preferred-elements><search:element ns="" name="body"/></search:preferred-elements>
-        <search:max-matches>2</search:max-matches>
-        <search:max-snippet-chars>400</search:max-snippet-chars>
-        <search:per-match-tokens>30</search:per-match-tokens>
+	<search:preferred-elements>
+	  <search:element ns="" name="description"/>
+	</search:preferred-elements>
+	<search:max-matches>2</search:max-matches>
+	<search:max-snippet-chars>400</search:max-snippet-chars>
+	<search:per-match-tokens>30</search:per-match-tokens>
       </search:transform-results>
     </search:state>
   </search:operator>
+  <search:extract-metadata>
+    <search:qname elem-ns="" elem-name="organization"/>
+    <search:qname elem-ns="" elem-name="gender"/>
+    <search:qname elem-ns="" elem-name="rank"/>
+    <search:qname elem-ns="" elem-name="name"/>
+    <search:constraint-value ref="BirthPlace"/>
+    <search:constraint-value ref="Organization"/>
+    <search:constraint-value ref="Rank"/>
+    <search:constraint-value ref="Species"/>
+    <search:constraint-value ref="Gender"/>
+  </search:extract-metadata>
   <annotation xmlns="http://marklogic.com/appservices/search">Delta options here</annotation>
 </search:options>

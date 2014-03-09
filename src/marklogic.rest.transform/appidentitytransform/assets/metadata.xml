@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rapi:transform-metadata xmlns:rapi="http://marklogic.com/rest-api">
+  <rapi:name>appidentitytransform</rapi:name>
+  <rapi:source-format>xslt</rapi:source-format>
+  <rapi:title>app-identity-transform</rapi:title>
+  <rapi:version>0.1</rapi:version>
+  <rapi:provider-name>MarkLogic</rapi:provider-name>
+  <rapi:description>This plugin applies XSLT transformation to content page, which inherits /application/custom/content.xsl </rapi:description>
+  <rapi:transform-parameters>
+    <rapi:parameter>
+      <rapi:parameter-name>value</rapi:parameter-name>
+      <rapi:parameter-type>xs:string</rapi:parameter-type>
+    </rapi:parameter>
+  </rapi:transform-parameters>
+</rapi:transform-metadata>

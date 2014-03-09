@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  for pages outside the main page, the rewriter will follow these rules: -->
+<!--  the master-xsl will be called with the indicated file as the input source -->
+<!--  for URIs formatted as follows: /content/{$uri-step} -->
+<rules xmlns="http://marklogic.com/appservices/app">
+  <master-xsl>/application/app.xsl</master-xsl>
+  <content>
+     <uri-step>default</uri-step>
+     <content-source>/index.html</content-source>
+  </content>
+  <content>
+     <uri-step>help</uri-step>
+     <content-source>/application/custom/help.html</content-source>
+  </content>
+  <content>
+     <uri-step>contact</uri-step>
+     <content-source>/application/custom/contact.html</content-source>
+  </content>
+  <content>
+     <uri-step>terms</uri-step>
+     <content-source>/application/custom/terms.html</content-source>
+  </content>
+</rules>

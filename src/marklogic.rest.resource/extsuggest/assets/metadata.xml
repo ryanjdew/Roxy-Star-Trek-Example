@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rapi:resource-metadata xmlns:rapi="http://marklogic.com/rest-api">
+  <rapi:name>extsuggest</rapi:name>
+  <rapi:source-format>xquery</rapi:source-format>
+  <rapi:description>search suggestion provider</rapi:description>
+  <rapi:version>0.1</rapi:version>
+  <rapi:title>search suggestions</rapi:title>
+  <rapi:provider-name>MarkLogic</rapi:provider-name>
+  <rapi:methods>
+    <rapi:method>
+      <rapi:method-name>get</rapi:method-name>
+      <rapi:parameter>
+	<rapi:parameter-name>pqtxt</rapi:parameter-name>
+	<rapi:parameter-type>xs:string</rapi:parameter-type>
+      </rapi:parameter>
+    </rapi:method>
+  </rapi:methods>
+</rapi:resource-metadata>
