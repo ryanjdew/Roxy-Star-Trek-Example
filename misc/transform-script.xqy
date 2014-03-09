@@ -158,6 +158,9 @@ return
       element birth-place {
         map:get(map:get($misc-map,$birth-place/sem:object/fn:string()),"name")
       },
+      element gender {
+        map:get(map:get($misc-map,$gender/sem:object/fn:string()),"name")
+      },
       element various-species {
         $species ! element species {map:get(map:get($misc-map,./sem:object/fn:string()),"name")}
       },

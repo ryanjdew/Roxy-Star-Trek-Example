@@ -25,6 +25,12 @@
 	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
 	<sem:object>/en/starfleet</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/seven_of_nine</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Seven of Nine is a fictional character on Star Trek: Voyager, portrayed by actress Jeri Ryan. Born human, she was assimilated by the Borg at the age of six. Eighteen years later, Voyager left Borg space with Seven on board, after attempts to negotiate passage through Borg space proved only semi-successful.
+After The Doctor had removed the majority of her cybernetic implants, her human organs began to reassert themselves, but Seven still required a cortical node to control the remainder of her cybernetic implants. Although her link to the Collective had been severed, Seven of Nine retained the ability to sense nearby Borg activity. Her full Borg designation is Seven of Nine, Tertiary Adjunct of Unimatrix Zero-One.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Seven of Nine</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -32,4 +38,5 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Seven of Nine</name><birth-place/><various-species><species>Borg</species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Seven of Nine</name><birth-place/><gender>Female</gender><various-species><species>Borg</species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Seven of Nine is a fictional character on Star Trek: Voyager, portrayed by actress Jeri Ryan. Born human, she was assimilated by the Borg at the age of six. Eighteen years later, Voyager left Borg space with Seven on board, after attempts to negotiate passage through Borg space proved only semi-successful.
+After The Doctor had removed the majority of her cybernetic implants, her human organs began to reassert themselves, but Seven still required a cortical node to control the remainder of her cybernetic implants. Although her link to the Collective had been severed, Seven of Nine retained the ability to sense nearby Borg activity. Her full Borg designation is Seven of Nine, Tertiary Adjunct of Unimatrix Zero-One.</description></resource>

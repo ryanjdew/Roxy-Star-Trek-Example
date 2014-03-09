@@ -20,6 +20,12 @@
 	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
 	<sem:object>/en/starfleet</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/hoshi_sato</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Hoshi Sato, played by Korean American actress Linda Park, is a fictional character in the science fiction television series Star Trek: Enterprise.
+Sato, born in 2129, is the communications officer aboard the starship Enterprise, and also a linguist who can speak more than forty languages, including Klingon. She is an acknowledged linguistic genius and expert at operating the universal translator, which was a key instrument in allowing cultures from different worlds to communicate.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Hoshi Sato</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -27,4 +33,5 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Hoshi Sato</name><birth-place/><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Hoshi Sato</name><birth-place/><gender>Female</gender><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Hoshi Sato, played by Korean American actress Linda Park, is a fictional character in the science fiction television series Star Trek: Enterprise.
+Sato, born in 2129, is the communications officer aboard the starship Enterprise, and also a linguist who can speak more than forty languages, including Klingon. She is an acknowledged linguistic genius and expert at operating the universal translator, which was a key instrument in allowing cultures from different worlds to communicate.</description></resource>

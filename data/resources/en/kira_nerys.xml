@@ -40,6 +40,11 @@
 	<sem:predicate>/fictional_universe/character_romantically_involved_with</sem:predicate>
 	<sem:object>/en/bareil_antos</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/kira_nerys</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Kira Nerys, played by Nana Visitor, is a main character in Star Trek: Deep Space Nine.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Kira Nerys</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -47,4 +52,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Kira Nerys</name><birth-place/><various-species><species>Bajoran</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks><rank>Major</rank><rank>Commander</rank><rank>Captain</rank></ranks><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Kira Nerys</name><birth-place/><gender>Female</gender><various-species><species>Bajoran</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks><rank>Major</rank><rank>Commander</rank><rank>Captain</rank></ranks><description>Kira Nerys, played by Nana Visitor, is a main character in Star Trek: Deep Space Nine.</description></resource>

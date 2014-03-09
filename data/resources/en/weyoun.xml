@@ -15,6 +15,12 @@
 	<sem:predicate>/fictional_universe/character_species</sem:predicate>
 	<sem:object>/en/vorta</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/weyoun</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Weyoun is a fictional character from the television series Star Trek: Deep Space Nine, in which he is portrayed by Jeffrey Combs. In the series, Weyoun is a diplomat and advisor of the Vorta species who is a member of the ruthless and militaristic Gamma quadrant state the Dominion. Like all Vorta, Weyoun is officious and sycophantic, always deferring to the Founders yet being ruthless in dealing with enemies and those under his command.
+Combs, who also played the recurring character of Brunt on Deep Space Nine, stated that he preferred playing Weyoun.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Weyoun</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -22,4 +28,5 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Weyoun</name><birth-place/><various-species><species>Vorta</species></various-species><organizations/><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Weyoun</name><birth-place/><gender>Male</gender><various-species><species>Vorta</species></various-species><organizations/><ranks/><description>Weyoun is a fictional character from the television series Star Trek: Deep Space Nine, in which he is portrayed by Jeffrey Combs. In the series, Weyoun is a diplomat and advisor of the Vorta species who is a member of the ruthless and militaristic Gamma quadrant state the Dominion. Like all Vorta, Weyoun is officious and sycophantic, always deferring to the Founders yet being ruthless in dealing with enemies and those under his command.
+Combs, who also played the recurring character of Brunt on Deep Space Nine, stated that he preferred playing Weyoun.</description></resource>

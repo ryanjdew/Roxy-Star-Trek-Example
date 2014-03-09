@@ -22,6 +22,11 @@
       </sem:triple>
       <sem:triple>
 	<sem:subject>/en/tpol</sem:subject>
+	<sem:predicate>/fictional_universe/character_place_of_birth</sem:predicate>
+	<sem:object>/m/045nxc</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/tpol</sem:subject>
 	<sem:predicate>/common/topic/description</sem:predicate>
 	<sem:object>Commander T'Pol, born 2088, is a fictional character portrayed by Jolene Blalock in Star Trek: Enterprise. She is a Vulcan who serves as the science officer aboard the starship Enterprise.</sem:object>
       </sem:triple>
@@ -32,4 +37,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>T'Pol</name><birth-place/><various-species><species>Vulcan</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Commander T'Pol, born 2088, is a fictional character portrayed by Jolene Blalock in Star Trek: Enterprise. She is a Vulcan who serves as the science officer aboard the starship Enterprise.</description></resource>
+      </cts:word-query></reverse-query></meta><name>T'Pol</name><birth-place>Vulcan</birth-place><gender>Female</gender><various-species><species>Vulcan</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Commander T'Pol, born 2088, is a fictional character portrayed by Jolene Blalock in Star Trek: Enterprise. She is a Vulcan who serves as the science officer aboard the starship Enterprise.</description></resource>

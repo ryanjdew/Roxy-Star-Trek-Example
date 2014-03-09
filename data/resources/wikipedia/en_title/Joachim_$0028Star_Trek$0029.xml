@@ -20,6 +20,11 @@
 	<sem:predicate>/fictional_universe/character_species</sem:predicate>
 	<sem:object>/m/05v1ly8</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/wikipedia/en_title/Joachim_$0028Star_Trek$0029</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Joachim is a fictional character in the Star Trek media franchise.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Joachim</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -27,4 +32,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Joachim</name><birth-place/><various-species><species>Human</species><species>Augment</species></various-species><organizations/><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Joachim</name><birth-place/><gender>Male</gender><various-species><species>Human</species><species>Augment</species></various-species><organizations/><ranks/><description>Joachim is a fictional character in the Star Trek media franchise.</description></resource>

@@ -37,6 +37,11 @@
       </sem:triple>
       <sem:triple>
 	<sem:subject>/en/tasha_yar</sem:subject>
+	<sem:predicate>/fictional_universe/character_place_of_birth</sem:predicate>
+	<sem:object>/en/turkana_iv</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/tasha_yar</sem:subject>
 	<sem:predicate>/fictional_universe/character_romantically_involved_with</sem:predicate>
 	<sem:object>/wikipedia/ru_id/341620</sem:object>
       </sem:triple>
@@ -53,5 +58,5 @@ The character first appeared in the series' pilot episode, "Encounter at Farpoin
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Tasha Yar</name><birth-place/><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks><rank>Chief Tactical Officer</rank><rank>Chief of Security</rank></ranks><description>Lieutenant Natasha "Tasha" Yar is a fictional character who mainly appeared in the first season of the American science fiction television series Star Trek: The Next Generation. Portrayed by Denise Crosby, she is chief of security aboard the Starfleet starship USS Enterprise-D. The character's concept was originally based upon the character of Vasquez from the 1986 film Aliens. Following further development she became known first as Tanya, and then Tasha. Crosby had originally auditioned for the role of Deanna Troi, while Rosalind Chao became a favorite for Tasha. After Marina Sirtis auditioned for the role, the show's creator Gene Roddenberry decided to switch the roles for the actresses, with Sirtis becoming Troi and Crosby becoming Yar.
+      </cts:word-query></reverse-query></meta><name>Tasha Yar</name><birth-place>Turkana IV</birth-place><gender>Female</gender><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks><rank>Chief Tactical Officer</rank><rank>Chief of Security</rank></ranks><description>Lieutenant Natasha "Tasha" Yar is a fictional character who mainly appeared in the first season of the American science fiction television series Star Trek: The Next Generation. Portrayed by Denise Crosby, she is chief of security aboard the Starfleet starship USS Enterprise-D. The character's concept was originally based upon the character of Vasquez from the 1986 film Aliens. Following further development she became known first as Tanya, and then Tasha. Crosby had originally auditioned for the role of Deanna Troi, while Rosalind Chao became a favorite for Tasha. After Marina Sirtis auditioned for the role, the show's creator Gene Roddenberry decided to switch the roles for the actresses, with Sirtis becoming Troi and Crosby becoming Yar.
 The character first appeared in the series' pilot episode, "Encounter at Farpoint". After Crosby decided to leave the show, Yar was killed by the creature Armus in "Skin of Evil", the 23rd episode of the season. She was written back into the show for a guest appearance in the third season episode "Yesterday's Enterprise", in which the timeline was altered so that she did not die, and again in the final episode of the series "All Good Things...", in events set prior to the pilot.</description></resource>

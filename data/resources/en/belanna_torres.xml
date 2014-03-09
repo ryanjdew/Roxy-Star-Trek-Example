@@ -25,6 +25,11 @@
 	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
 	<sem:object>/en/starfleet</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/belanna_torres</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>B'Elanna Torres is a main character in Star Trek: Voyager played by Roxann Dawson. She is portrayed as a half-human half-Klingon born in 2349 on the Federation colony Kessik IV. Torres joined the Maquis in 2370 and was serving on the Val Jean when taken to the Delta Quadrant. Later, when she joined the USS Voyager, she was given provisional rank of Lieutenant, junior grade and posted in engineering. After some time she was promoted to Chief Engineer. In 2377, she married Tom Paris and gave birth to their daughter Miral at the beginning of the next year, while Voyager was returning to the Alpha Quadrant.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">B'Elanna Torres</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -32,4 +37,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>B'Elanna Torres</name><birth-place/><various-species><species>Klingon</species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>B'Elanna Torres</name><birth-place/><gender>Female</gender><various-species><species>Klingon</species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>B'Elanna Torres is a main character in Star Trek: Voyager played by Roxann Dawson. She is portrayed as a half-human half-Klingon born in 2349 on the Federation colony Kessik IV. Torres joined the Maquis in 2370 and was serving on the Val Jean when taken to the Delta Quadrant. Later, when she joined the USS Voyager, she was given provisional rank of Lieutenant, junior grade and posted in engineering. After some time she was promoted to Chief Engineer. In 2377, she married Tom Paris and gave birth to their daughter Miral at the beginning of the next year, while Voyager was returning to the Alpha Quadrant.</description></resource>

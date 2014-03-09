@@ -20,6 +20,11 @@
 	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
 	<sem:object>/en/starfleet</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/ezri_dax</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Ezri Dax, played by Nicole de Boer, is a main character in the seventh season of the American science fiction TV series Star Trek: Deep Space Nine. In the series narrative Ezri Dax is a counselor aboard the Federation space station Deep Space Nine.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Ezri Dax</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -27,4 +32,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Ezri Dax</name><birth-place/><various-species><species>Trill</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Ezri Dax</name><birth-place/><gender>Female</gender><various-species><species>Trill</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Ezri Dax, played by Nicole de Boer, is a main character in the seventh season of the American science fiction TV series Star Trek: Deep Space Nine. In the series narrative Ezri Dax is a counselor aboard the Federation space station Deep Space Nine.</description></resource>

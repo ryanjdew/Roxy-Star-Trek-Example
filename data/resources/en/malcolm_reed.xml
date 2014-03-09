@@ -20,6 +20,12 @@
 	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
 	<sem:object>/en/starfleet</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/malcolm_reed</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Malcolm Reed, portrayed by Dominic Keating, is a fictional character on the television series Star Trek: Enterprise.
+Reed, born 2117, is English, and is, at different times, the tactical officer and armory officer aboard the starship Enterprise. He holds the rank of Lieutenant. However, in the episode "Twilight", the alternate timeline Reed holds the rank of Captain—he is in the process of taking over the Earth Starfleet vessel Intrepid.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Malcolm Reed</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -27,4 +33,5 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Malcolm Reed</name><birth-place/><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Malcolm Reed</name><birth-place/><gender>Male</gender><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Malcolm Reed, portrayed by Dominic Keating, is a fictional character on the television series Star Trek: Enterprise.
+Reed, born 2117, is English, and is, at different times, the tactical officer and armory officer aboard the starship Enterprise. He holds the rank of Lieutenant. However, in the episode "Twilight", the alternate timeline Reed holds the rank of Captain—he is in the process of taking over the Earth Starfleet vessel Intrepid.</description></resource>

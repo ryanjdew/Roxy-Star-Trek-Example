@@ -22,6 +22,11 @@
       </sem:triple>
       <sem:triple>
 	<sem:subject>/en/khan_noonien_singh</sem:subject>
+	<sem:predicate>/fictional_universe/character_place_of_birth</sem:predicate>
+	<sem:object>/en/earth</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/khan_noonien_singh</sem:subject>
 	<sem:predicate>/fictional_universe/character_romantically_involved_with</sem:predicate>
 	<sem:object>/en/marla_mcgivers</sem:object>
       </sem:triple>
@@ -37,4 +42,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Khan Noonien Singh</name><birth-place/><various-species><species>Human</species><species>Augment</species></various-species><organizations/><ranks/><description>Khan Noonien Singh is a fictional character in the Star Trek media franchise.</description></resource>
+      </cts:word-query></reverse-query></meta><name>Khan Noonien Singh</name><birth-place>Earth</birth-place><gender>Male</gender><various-species><species>Human</species><species>Augment</species></various-species><organizations/><ranks/><description>Khan Noonien Singh is a fictional character in the Star Trek media franchise.</description></resource>

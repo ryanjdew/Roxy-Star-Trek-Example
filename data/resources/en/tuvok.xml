@@ -22,6 +22,11 @@
       </sem:triple>
       <sem:triple>
 	<sem:subject>/en/tuvok</sem:subject>
+	<sem:predicate>/fictional_universe/character_place_of_birth</sem:predicate>
+	<sem:object>/m/045nxc</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/tuvok</sem:subject>
 	<sem:predicate>/common/topic/description</sem:predicate>
 	<sem:object>Tuvok is one of the main characters on the television series Star Trek: Voyager. Tuvok is a Vulcan who serves as the ship's Chief of Security and Chief Tactical Officer. Tim Russ portrayed Tuvok throughout the show's run, from 1995 to 2001.</sem:object>
       </sem:triple>
@@ -32,4 +37,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Tuvok</name><birth-place/><various-species><species>Vulcan</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Tuvok is one of the main characters on the television series Star Trek: Voyager. Tuvok is a Vulcan who serves as the ship's Chief of Security and Chief Tactical Officer. Tim Russ portrayed Tuvok throughout the show's run, from 1995 to 2001.</description></resource>
+      </cts:word-query></reverse-query></meta><name>Tuvok</name><birth-place>Vulcan</birth-place><gender>Male</gender><various-species><species>Vulcan</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Tuvok is one of the main characters on the television series Star Trek: Voyager. Tuvok is a Vulcan who serves as the ship's Chief of Security and Chief Tactical Officer. Tim Russ portrayed Tuvok throughout the show's run, from 1995 to 2001.</description></resource>

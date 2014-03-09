@@ -22,6 +22,11 @@
       </sem:triple>
       <sem:triple>
 	<sem:subject>/en/hikaru_sulu</sem:subject>
+	<sem:predicate>/fictional_universe/character_place_of_birth</sem:predicate>
+	<sem:object>/en/san_francisco</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/hikaru_sulu</sem:subject>
 	<sem:predicate>/common/topic/description</sem:predicate>
 	<sem:object>Hikaru Sulu is a fictional character in the Star Trek media franchise.</sem:object>
       </sem:triple>
@@ -32,4 +37,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Hikaru Sulu</name><birth-place/><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Hikaru Sulu is a fictional character in the Star Trek media franchise.</description></resource>
+      </cts:word-query></reverse-query></meta><name>Hikaru Sulu</name><birth-place>San Francisco</birth-place><gender>Male</gender><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Hikaru Sulu is a fictional character in the Star Trek media franchise.</description></resource>

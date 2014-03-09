@@ -32,6 +32,11 @@
       </sem:triple>
       <sem:triple>
 	<sem:subject>/en/spock</sem:subject>
+	<sem:predicate>/fictional_universe/character_place_of_birth</sem:predicate>
+	<sem:object>/m/045nxc</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/spock</sem:subject>
 	<sem:predicate>/common/topic/description</sem:predicate>
 	<sem:object>Spock is a fictional character in the Star Trek media franchise.</sem:object>
       </sem:triple>
@@ -42,4 +47,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Spock</name><birth-place/><various-species><species>Vulcan</species><species>Human</species></various-species><organizations><organization>Starfleet</organization><organization>United Federation of Planets</organization></organizations><ranks/><description>Spock is a fictional character in the Star Trek media franchise.</description></resource>
+      </cts:word-query></reverse-query></meta><name>Spock</name><birth-place>Vulcan</birth-place><gender>Male</gender><various-species><species>Vulcan</species><species>Human</species></various-species><organizations><organization>Starfleet</organization><organization>United Federation of Planets</organization></organizations><ranks/><description>Spock is a fictional character in the Star Trek media franchise.</description></resource>

@@ -20,6 +20,13 @@
 	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
 	<sem:object>/en/starfleet</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/jadzia_dax</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Jadzia Dax, played by Terry Farrell, was a main character during the first six seasons of the science fiction television series Star Trek: Deep Space Nine.
+Jadzia Dax is a joined Trill. Though she appears to be a young woman, Jadzia lives in symbiosis with a wise and long-lived creature, known as a symbiont, named Dax. The two share a single, conscious mind, and her personality is a blending of the characteristics of both the host and the symbiont. As such, Jadzia has access to all the skills and memories of the symbiont's seven previous hosts. Jadzia holds academic degrees in Exobiology, Zoology, Astrophysics and Exoarchaeology, all of which she earned before being joined with the symbiont Dax.
+Jadzia Dax is the station's chief science officer, and is close friends with commander Benjamin Sisko and Bajoran first officer Kira Nerys. Later in the series, she becomes involved with the Klingon character Worf, and they marry during the sixth season of the show. Her character is killed by Gul Dukat during the sixth season finale. The character of Dax re-emerges in the seventh season premiere in the form of Ezri Dax.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Jadzia Dax</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -27,4 +34,6 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Jadzia Dax</name><birth-place/><various-species><species>Trill</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Jadzia Dax</name><birth-place/><gender>Female</gender><various-species><species>Trill</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Jadzia Dax, played by Terry Farrell, was a main character during the first six seasons of the science fiction television series Star Trek: Deep Space Nine.
+Jadzia Dax is a joined Trill. Though she appears to be a young woman, Jadzia lives in symbiosis with a wise and long-lived creature, known as a symbiont, named Dax. The two share a single, conscious mind, and her personality is a blending of the characteristics of both the host and the symbiont. As such, Jadzia has access to all the skills and memories of the symbiont's seven previous hosts. Jadzia holds academic degrees in Exobiology, Zoology, Astrophysics and Exoarchaeology, all of which she earned before being joined with the symbiont Dax.
+Jadzia Dax is the station's chief science officer, and is close friends with commander Benjamin Sisko and Bajoran first officer Kira Nerys. Later in the series, she becomes involved with the Klingon character Worf, and they marry during the sixth season of the show. Her character is killed by Gul Dukat during the sixth season finale. The character of Dax re-emerges in the seventh season premiere in the form of Ezri Dax.</description></resource>

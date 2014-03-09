@@ -20,6 +20,12 @@
 	<sem:predicate>/fictional_universe/character_rank</sem:predicate>
 	<sem:object>/en/general</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/wikipedia/fr/G$00E9n$00E9ral_Chang</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>General Chang is a fictional character from the Star Trek fictional universe who was portrayed by Christopher Plummer in Star Trek VI: The Undiscovered Country.
+Chang is Chancellor Gorkon's chief of staff, and subsequently serves Chancellor Azetbur. He is an avid fan of William Shakespeare, whom he frequently quotes, much to the chagrin of the Enterprise crew. He is almost completely bald, a trait not seen among Klingons prior to Star Trek VI's release. The Chang makeup originally included a wig appliance. However, Christopher Plummer felt removing the wig made the character more distinct; he also asked that Chang's Klingon makeup be made less severe. His costume is also unique in that an apparent eye injury is disguised with a metal eyepatch which is attached directly to his skull by bolts bearing the Klingon emblem; later depictions of Klingons with eye injuries, such as Deep Space Nine's Martok, had them flaunting their mutilations as battle scars.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Chang</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -27,4 +33,5 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Chang</name><birth-place/><various-species><species>Klingon</species></various-species><organizations/><ranks><rank>General</rank></ranks><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Chang</name><birth-place/><gender>Male</gender><various-species><species>Klingon</species></various-species><organizations/><ranks><rank>General</rank></ranks><description>General Chang is a fictional character from the Star Trek fictional universe who was portrayed by Christopher Plummer in Star Trek VI: The Undiscovered Country.
+Chang is Chancellor Gorkon's chief of staff, and subsequently serves Chancellor Azetbur. He is an avid fan of William Shakespeare, whom he frequently quotes, much to the chagrin of the Enterprise crew. He is almost completely bald, a trait not seen among Klingons prior to Star Trek VI's release. The Chang makeup originally included a wig appliance. However, Christopher Plummer felt removing the wig made the character more distinct; he also asked that Chang's Klingon makeup be made less severe. His costume is also unique in that an apparent eye injury is disguised with a metal eyepatch which is attached directly to his skull by bolts bearing the Klingon emblem; later depictions of Klingons with eye injuries, such as Deep Space Nine's Martok, had them flaunting their mutilations as battle scars.</description></resource>

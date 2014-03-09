@@ -20,6 +20,11 @@
 	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
 	<sem:object>/en/starfleet</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/geordi_la_forge</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Lieutenant Commander Geordi La Forge is a fictional character who appeared in all seven seasons of the American science fiction television series Star Trek: The Next Generation and its four feature films. Portrayed by LeVar Burton, he served as helmsman of the USS Enterprise-D in the first season, then occupied the role of the chief engineer for the rest of the series and in the films. La Forge is naturally blind so one of his trademarks in the series is wearing a VISOR, which is later replaced by ocular prosthetic implants in the last three films.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Geordi La Forge</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -27,4 +32,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Geordi La Forge</name><birth-place/><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Geordi La Forge</name><birth-place/><gender>Male</gender><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Lieutenant Commander Geordi La Forge is a fictional character who appeared in all seven seasons of the American science fiction television series Star Trek: The Next Generation and its four feature films. Portrayed by LeVar Burton, he served as helmsman of the USS Enterprise-D in the first season, then occupied the role of the chief engineer for the rest of the series and in the films. La Forge is naturally blind so one of his trademarks in the series is wearing a VISOR, which is later replaced by ocular prosthetic implants in the last three films.</description></resource>

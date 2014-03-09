@@ -27,4 +27,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>David Marcus</name><birth-place/><various-species><species>Human</species></various-species><organizations/><ranks/><description>David Marcus is a fictional character in the Star Trek media franchise.</description></resource>
+      </cts:word-query></reverse-query></meta><name>David Marcus</name><birth-place/><gender>Male</gender><various-species><species>Human</species></various-species><organizations/><ranks/><description>David Marcus is a fictional character in the Star Trek media franchise.</description></resource>

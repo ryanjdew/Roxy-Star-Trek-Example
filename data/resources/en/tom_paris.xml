@@ -20,6 +20,11 @@
 	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
 	<sem:object>/en/starfleet</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/tom_paris</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Thomas Eugene "Tom" Paris, played by Robert Duncan McNeill, is a character in the American science fiction television series Star Trek: Voyager. Paris serves as the chief helmsman and an auxiliary medic aboard the USS Voyager. The character's middle name, "Eugene", is a tribute to Star Trek creator Gene Roddenberry.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Tom Paris</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -27,4 +32,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Tom Paris</name><birth-place/><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Tom Paris</name><birth-place/><gender>Male</gender><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Thomas Eugene "Tom" Paris, played by Robert Duncan McNeill, is a character in the American science fiction television series Star Trek: Voyager. Paris serves as the chief helmsman and an auxiliary medic aboard the USS Voyager. The character's middle name, "Eugene", is a tribute to Star Trek creator Gene Roddenberry.</description></resource>

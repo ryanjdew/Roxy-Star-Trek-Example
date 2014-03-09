@@ -15,6 +15,11 @@
 	<sem:predicate>/fictional_universe/character_species</sem:predicate>
 	<sem:object>/m/023bq0</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/female_changeling</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object/>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Female Changeling</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -22,4 +27,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Female Changeling</name><birth-place/><various-species><species>Changeling</species></various-species><organizations/><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Female Changeling</name><birth-place/><gender>Female</gender><various-species><species>Changeling</species></various-species><organizations/><ranks/><description/></resource>

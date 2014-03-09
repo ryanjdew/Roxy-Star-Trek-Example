@@ -25,6 +25,11 @@
 	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
 	<sem:object>/en/starfleet</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/deanna_troi</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Commander Deanna Troi is a main character in the science-fiction television series Star Trek: The Next Generation and related TV series and films, portrayed by actress Marina Sirtis. Troi is half-human, half-Betazoid and has the psionic ability to sense emotions. She serves as the ship's counselor on USS Enterprise-D. Throughout most of the series, she holds the rank of lieutenant commander. In the seventh season, however, Troi takes the bridge officer's examination and is promoted to the rank of commander, but continues as counselor. As of Star Trek: Nemesis she is credited as "Deanna Troi-Riker" because of her marriage to William Riker.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Deanna Troi</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -32,4 +37,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Deanna Troi</name><birth-place/><various-species><species>Human</species><species>Betazoid</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Deanna Troi</name><birth-place/><gender>Female</gender><various-species><species>Human</species><species>Betazoid</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Commander Deanna Troi is a main character in the science-fiction television series Star Trek: The Next Generation and related TV series and films, portrayed by actress Marina Sirtis. Troi is half-human, half-Betazoid and has the psionic ability to sense emotions. She serves as the ship's counselor on USS Enterprise-D. Throughout most of the series, she holds the rank of lieutenant commander. In the seventh season, however, Troi takes the bridge officer's examination and is promoted to the rank of commander, but continues as counselor. As of Star Trek: Nemesis she is credited as "Deanna Troi-Riker" because of her marriage to William Riker.</description></resource>

@@ -32,4 +32,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Worf</name><birth-place/><various-species><species>Klingon</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Worf is a fictional character from the 2008 television short film Star Trek: Chains of Betrayal</description></resource>
+      </cts:word-query></reverse-query></meta><name>Worf</name><birth-place/><gender>Male</gender><various-species><species>Klingon</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Worf is a fictional character from the 2008 television short film Star Trek: Chains of Betrayal</description></resource>

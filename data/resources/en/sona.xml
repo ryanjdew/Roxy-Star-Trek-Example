@@ -5,6 +5,11 @@
 	<sem:predicate>name</sem:predicate>
 	<sem:object>Son'a</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/sona</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object/>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Son'a</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -12,4 +17,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Son'a</name><birth-place/><various-species/><organizations/><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Son'a</name><birth-place/><gender/><various-species/><organizations/><ranks/><description/></resource>

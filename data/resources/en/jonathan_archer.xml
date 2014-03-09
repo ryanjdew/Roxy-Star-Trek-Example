@@ -30,6 +30,13 @@
 	<sem:predicate>/fictional_universe/character_rank</sem:predicate>
 	<sem:object>/m/0bd89d</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/jonathan_archer</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Jonathan Archer is a fictional character in the Star Trek franchise. He is the protagonist of the television series Star Trek: Enterprise, where he is portrayed by Scott Bakula. Archer also plays a major role in the formation of the United Federation of Planets.
+Archer is the commanding officer of the first starship Enterprise from 2151 to 2161, and is later President of the United Federation of Planets from 2184 to 2192.
+According to a computer display in the episode "In a Mirror, Darkly", historian John Gill considered Archer "the greatest explorer of the 22nd century." The same display states that two planets were named after Archer: Archer IV and Archer's Planet.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Jonathan Archer</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -37,4 +44,6 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Jonathan Archer</name><birth-place/><various-species><species>Human</species></various-species><organizations><organization>United Federation of Planets</organization><organization>Starfleet</organization></organizations><ranks><rank>Captain</rank></ranks><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Jonathan Archer</name><birth-place/><gender>Male</gender><various-species><species>Human</species></various-species><organizations><organization>United Federation of Planets</organization><organization>Starfleet</organization></organizations><ranks><rank>Captain</rank></ranks><description>Jonathan Archer is a fictional character in the Star Trek franchise. He is the protagonist of the television series Star Trek: Enterprise, where he is portrayed by Scott Bakula. Archer also plays a major role in the formation of the United Federation of Planets.
+Archer is the commanding officer of the first starship Enterprise from 2151 to 2161, and is later President of the United Federation of Planets from 2184 to 2192.
+According to a computer display in the episode "In a Mirror, Darkly", historian John Gill considered Archer "the greatest explorer of the 22nd century." The same display states that two planets were named after Archer: Archer IV and Archer's Planet.</description></resource>

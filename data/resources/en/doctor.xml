@@ -35,6 +35,11 @@
 	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
 	<sem:object>/en/starfleet</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/doctor</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>The Doctor is a fictional character from the 1995 tv series Star Trek:Voyager.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Doctor</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -42,4 +47,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Doctor</name><birth-place/><various-species><species>Artificial intelligence</species><species>Human</species><species>Holography</species><species>Emergency Medical Hologram</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Doctor</name><birth-place/><gender>Male</gender><various-species><species>Artificial intelligence</species><species>Human</species><species>Holography</species><species>Emergency Medical Hologram</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>The Doctor is a fictional character from the 1995 tv series Star Trek:Voyager.</description></resource>

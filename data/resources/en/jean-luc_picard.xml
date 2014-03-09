@@ -27,6 +27,11 @@
       </sem:triple>
       <sem:triple>
 	<sem:subject>/en/jean-luc_picard</sem:subject>
+	<sem:predicate>/fictional_universe/character_place_of_birth</sem:predicate>
+	<sem:object>/en/la_barre_haute_saone</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/jean-luc_picard</sem:subject>
 	<sem:predicate>/fictional_universe/character_romantically_involved_with</sem:predicate>
 	<sem:object>/en/beverly_crusher</sem:object>
       </sem:triple>
@@ -47,4 +52,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Jean-Luc Picard</name><birth-place/><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks><rank>Captain</rank></ranks><description>Captain Jean-Luc Picard is a Star Trek character portrayed by Patrick Stewart. He appears in the television series Star Trek: The Next Generation and the feature films Star Trek Generations, Star Trek: First Contact, Star Trek: Insurrection and Star Trek: Nemesis. He also made an appearance in the pilot episode of Star Trek: Deep Space Nine.</description></resource>
+      </cts:word-query></reverse-query></meta><name>Jean-Luc Picard</name><birth-place>La Barre</birth-place><gender>Male</gender><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks><rank>Captain</rank></ranks><description>Captain Jean-Luc Picard is a Star Trek character portrayed by Patrick Stewart. He appears in the television series Star Trek: The Next Generation and the feature films Star Trek Generations, Star Trek: First Contact, Star Trek: Insurrection and Star Trek: Nemesis. He also made an appearance in the pilot episode of Star Trek: Deep Space Nine.</description></resource>

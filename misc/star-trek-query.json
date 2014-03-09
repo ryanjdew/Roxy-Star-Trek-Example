@@ -9,6 +9,13 @@
     "name": null,
     "type": "/fictional_universe/fictional_universe"
   }],
+  "place_of_birth": {
+    "id": null,
+    "mid": null,
+    "name": null,
+    "limit": 1,
+    "optional": true
+  },
   "gender": [{
     "id": null,
     "index": null,

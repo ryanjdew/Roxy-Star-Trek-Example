@@ -20,6 +20,11 @@
 	<sem:predicate>/fictional_universe/character_species</sem:predicate>
 	<sem:object>/m/05v1ly8</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/koloth</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object/>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Koloth</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -27,4 +32,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Koloth</name><birth-place/><various-species><species>Klingon</species><species>Augment</species></various-species><organizations/><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Koloth</name><birth-place/><gender>Male</gender><various-species><species>Klingon</species><species>Augment</species></various-species><organizations/><ranks/><description/></resource>

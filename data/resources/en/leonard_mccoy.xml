@@ -32,4 +32,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Leonard McCoy</name><birth-place/><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Leonard McCoy is a fictional character in the Star Trek media franchise.</description></resource>
+      </cts:word-query></reverse-query></meta><name>Leonard McCoy</name><birth-place/><gender>Male</gender><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Leonard McCoy is a fictional character in the Star Trek media franchise.</description></resource>

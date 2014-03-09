@@ -20,6 +20,12 @@
 	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
 	<sem:object>/en/starfleet</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/kes</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Kes is a character in the American science fiction television series Star Trek: Voyager, played by Jennifer Lien.
+She was a regular for the first three seasons, leaving the show in the season four episode "The Gift". She made one guest appearance two seasons later.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Kes</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -27,4 +33,5 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Kes</name><birth-place/><various-species><species>Ocampa</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Kes</name><birth-place/><gender>Female</gender><various-species><species>Ocampa</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Kes is a character in the American science fiction television series Star Trek: Voyager, played by Jennifer Lien.
+She was a regular for the first three seasons, leaving the show in the season four episode "The Gift". She made one guest appearance two seasons later.</description></resource>

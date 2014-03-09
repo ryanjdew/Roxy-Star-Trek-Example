@@ -42,6 +42,11 @@
       </sem:triple>
       <sem:triple>
 	<sem:subject>/en/james_t_kirk</sem:subject>
+	<sem:predicate>/fictional_universe/character_place_of_birth</sem:predicate>
+	<sem:object>/en/riverside_iowa</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/james_t_kirk</sem:subject>
 	<sem:predicate>/common/topic/description</sem:predicate>
 	<sem:object>James T. Kirk is a fictional character in the Star Trek media franchise.</sem:object>
       </sem:triple>
@@ -52,4 +57,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>James T. Kirk</name><birth-place/><various-species><species>Human</species><species>Android</species></various-species><organizations><organization>Starfleet</organization><organization>United Federation of Planets</organization></organizations><ranks><rank>Captain</rank><rank>Admiral</rank></ranks><description>James T. Kirk is a fictional character in the Star Trek media franchise.</description></resource>
+      </cts:word-query></reverse-query></meta><name>James T. Kirk</name><birth-place>Riverside</birth-place><gender>Male</gender><various-species><species>Human</species><species>Android</species></various-species><organizations><organization>Starfleet</organization><organization>United Federation of Planets</organization></organizations><ranks><rank>Captain</rank><rank>Admiral</rank></ranks><description>James T. Kirk is a fictional character in the Star Trek media franchise.</description></resource>

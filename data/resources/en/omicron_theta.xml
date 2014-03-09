@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource uri="/en/omicron_theta"><meta><sem:triples xmlns:sem="http://marklogic.com/semantics">
+      <sem:triple>
+	<sem:subject>/en/omicron_theta</sem:subject>
+	<sem:predicate>name</sem:predicate>
+	<sem:object>Omicron Theta</sem:object>
+      </sem:triple>
+    </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+	<cts:text xml:lang="en">Omicron Theta</cts:text>
+	<cts:option>case-insensitive</cts:option>
+	<cts:option>diacritic-insensitive</cts:option>
+	<cts:option>punctuation-insensitive</cts:option>
+	<cts:option>whitespace-insensitive</cts:option>
+	<cts:option>stemmed</cts:option>
+      </cts:word-query></reverse-query></meta><name>Omicron Theta</name><description/></resource>

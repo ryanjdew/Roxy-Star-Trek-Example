@@ -27,4 +27,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Colonel Worf</name><birth-place/><various-species><species>Klingon</species></various-species><organizations/><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Colonel Worf</name><birth-place/><gender>Male</gender><various-species><species>Klingon</species></various-species><organizations/><ranks/><description/></resource>

@@ -32,4 +32,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Janice Rand</name><birth-place/><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Yeoman Janice Rand, played by Grace Lee Whitney, is a character in Star Trek: The Original Series. She subsequently appears in several Star Trek films and in an episode of Star Trek: Voyager.</description></resource>
+      </cts:word-query></reverse-query></meta><name>Janice Rand</name><birth-place/><gender>Female</gender><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Yeoman Janice Rand, played by Grace Lee Whitney, is a character in Star Trek: The Original Series. She subsequently appears in several Star Trek films and in an episode of Star Trek: Voyager.</description></resource>

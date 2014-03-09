@@ -15,6 +15,13 @@
 	<sem:predicate>/fictional_universe/character_species</sem:predicate>
 	<sem:object>/en/q_continuum</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/wikipedia/ja/Q_$0028$30B9$30BF$30FC$30C8$30EC$30C3$30AF$0029</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Q is a fictional character who appears in the television series Star Trek: The Next Generation, Star Trek: Deep Space Nine and Star Trek: Voyager, as well as in related products. In all of these programs, he is played by John de Lancie. The name "Q" also applies to all other individuals of the Q Continuum.
+Q is said to be omnipotent, and is continually evasive regarding his motivations. His home, the Q Continuum, is accessible to the Q and their guests, and the true nature of it is said to be beyond the comprehension of "lesser beings" such as humans so it is shown to humans only in ways they can understand.
+Beginning with the pilot episode of Star Trek: The Next Generation, Q became a recurring character, with pronounced comedic and dramatic chemistry between himself and Captain Jean-Luc Picard. He serves as a major antagonist in the beginning of The Next Generation; however, over the course of The Next Generation, Deep Space 9 and Voyager, Q evolves into an antihero during the early seasons of The Next Generation and later into a full-fledged hero by the beginning of Voyager. Gene Roddenberry chose the letter "Q" in honor of his friend, Janet Quarton.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Q</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -22,4 +29,6 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Q</name><birth-place/><various-species><species>Q Continuum</species></various-species><organizations/><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Q</name><birth-place/><gender>Male</gender><various-species><species>Q Continuum</species></various-species><organizations/><ranks/><description>Q is a fictional character who appears in the television series Star Trek: The Next Generation, Star Trek: Deep Space Nine and Star Trek: Voyager, as well as in related products. In all of these programs, he is played by John de Lancie. The name "Q" also applies to all other individuals of the Q Continuum.
+Q is said to be omnipotent, and is continually evasive regarding his motivations. His home, the Q Continuum, is accessible to the Q and their guests, and the true nature of it is said to be beyond the comprehension of "lesser beings" such as humans so it is shown to humans only in ways they can understand.
+Beginning with the pilot episode of Star Trek: The Next Generation, Q became a recurring character, with pronounced comedic and dramatic chemistry between himself and Captain Jean-Luc Picard. He serves as a major antagonist in the beginning of The Next Generation; however, over the course of The Next Generation, Deep Space 9 and Voyager, Q evolves into an antihero during the early seasons of The Next Generation and later into a full-fledged hero by the beginning of Voyager. Gene Roddenberry chose the letter "Q" in honor of his friend, Janet Quarton.</description></resource>

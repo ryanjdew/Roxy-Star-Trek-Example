@@ -20,6 +20,16 @@
 	<sem:predicate>/fictional_universe/fictional_organization</sem:predicate>
 	<sem:object>/en/starfleet</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/miles_obrien</sem:subject>
+	<sem:predicate>/fictional_universe/character_place_of_birth</sem:predicate>
+	<sem:object>/en/republic_of_ireland</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/miles_obrien</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Chief O'Brien is a fictional character from the 2008 film Star Trek: Chains of Betrayal.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Miles O'Brien</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -27,4 +37,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Miles O'Brien</name><birth-place/><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Miles O'Brien</name><birth-place>Republic of Ireland</birth-place><gender>Male</gender><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Chief O'Brien is a fictional character from the 2008 film Star Trek: Chains of Betrayal.</description></resource>

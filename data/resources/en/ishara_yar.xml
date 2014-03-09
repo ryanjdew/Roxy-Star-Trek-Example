@@ -27,4 +27,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Ishara Yar</name><birth-place/><various-species/><organizations/><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Ishara Yar</name><birth-place/><gender>Female</gender><various-species/><organizations/><ranks/><description/></resource>

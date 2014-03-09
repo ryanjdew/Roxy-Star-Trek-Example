@@ -15,6 +15,12 @@
 	<sem:predicate>/fictional_universe/character_species</sem:predicate>
 	<sem:object>/en/trill</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/wikipedia/ja/$30C0$30C3$30AF$30B9</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Dax is a character in the fictional Star Trek universe. Like all other Trill symbionts, it lives inside humanoid hosts. Two of Dax's hosts, Jadzia Dax and Ezri Dax, appear as major characters in Star Trek: Deep Space Nine. Others are only seen in flashbacks and when taking over others' bodies in the DS9 season 3 episode "Facets". Dax's hosts also appear in spin-offs such as Star Trek: The Human Frontier and The Lives of Dax.
+Throughout the franchise's timeline, Dax has been joined with four men and five women, living for more than three hundred years in total. Dax has been present for many important events in Star Trek history, such as the negotiation and signing of the Khitomer Accords, the discovery of the Bajoran wormhole, and the end of the Dominion War.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Dax</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -22,4 +28,5 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Dax</name><birth-place/><various-species><species>Trill</species></various-species><organizations/><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Dax</name><birth-place/><gender>None</gender><various-species><species>Trill</species></various-species><organizations/><ranks/><description>Dax is a character in the fictional Star Trek universe. Like all other Trill symbionts, it lives inside humanoid hosts. Two of Dax's hosts, Jadzia Dax and Ezri Dax, appear as major characters in Star Trek: Deep Space Nine. Others are only seen in flashbacks and when taking over others' bodies in the DS9 season 3 episode "Facets". Dax's hosts also appear in spin-offs such as Star Trek: The Human Frontier and The Lives of Dax.
+Throughout the franchise's timeline, Dax has been joined with four men and five women, living for more than three hundred years in total. Dax has been present for many important events in Star Trek history, such as the negotiation and signing of the Khitomer Accords, the discovery of the Bajoran wormhole, and the end of the Dominion War.</description></resource>

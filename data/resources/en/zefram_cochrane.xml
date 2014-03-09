@@ -15,6 +15,12 @@
 	<sem:predicate>/fictional_universe/character_species</sem:predicate>
 	<sem:object>/en/human</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/zefram_cochrane</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Zefram Cochrane is a fictional character in the Star Trek universe. Created by writer Gene L. Coon, the character first appeared in the 1967 Star Trek episode "Metamorphosis", in which he was played by Glenn Corbett. James Cromwell later played Cochrane in the 1996 feature film Star Trek: First Contact and the 2001 Star Trek: Enterprise pilot, "Broken Bow". Footage of Cromwell from Star Trek: First Contact was used in the Enterprise episode "In a Mirror, Darkly", along with new footage of an identically-dressed actor whose face is not shown.
+As established by the events of Star Trek: First Contact, Cochrane is the first human to invent warp drive, in 2063, drawing the attention of the Vulcans, and leading to humanity's first contact with an alien race.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Zefram Cochrane</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -22,4 +28,5 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Zefram Cochrane</name><birth-place/><various-species><species>Human</species></various-species><organizations/><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Zefram Cochrane</name><birth-place/><gender>Male</gender><various-species><species>Human</species></various-species><organizations/><ranks/><description>Zefram Cochrane is a fictional character in the Star Trek universe. Created by writer Gene L. Coon, the character first appeared in the 1967 Star Trek episode "Metamorphosis", in which he was played by Glenn Corbett. James Cromwell later played Cochrane in the 1996 feature film Star Trek: First Contact and the 2001 Star Trek: Enterprise pilot, "Broken Bow". Footage of Cromwell from Star Trek: First Contact was used in the Enterprise episode "In a Mirror, Darkly", along with new footage of an identically-dressed actor whose face is not shown.
+As established by the events of Star Trek: First Contact, Cochrane is the first human to invent warp drive, in 2063, drawing the attention of the Vulcans, and leading to humanity's first contact with an alien race.</description></resource>

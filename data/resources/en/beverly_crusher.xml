@@ -25,6 +25,11 @@
 	<sem:predicate>/fictional_universe/character_romantically_involved_with</sem:predicate>
 	<sem:object>/en/jean-luc_picard</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/beverly_crusher</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Dr. Beverly Crusher is a fictional character from the 2008 film Star Trek: Chains of Betrayal.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Beverly Crusher</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -32,4 +37,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Beverly Crusher</name><birth-place/><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Beverly Crusher</name><birth-place/><gender>Female</gender><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks/><description>Dr. Beverly Crusher is a fictional character from the 2008 film Star Trek: Chains of Betrayal.</description></resource>

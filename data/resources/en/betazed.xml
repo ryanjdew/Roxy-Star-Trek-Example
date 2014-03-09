@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource uri="/en/betazed"><meta><sem:triples xmlns:sem="http://marklogic.com/semantics">
+      <sem:triple>
+	<sem:subject>/en/betazed</sem:subject>
+	<sem:predicate>name</sem:predicate>
+	<sem:object>Betazed</sem:object>
+      </sem:triple>
+    </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+	<cts:text xml:lang="en">Betazed</cts:text>
+	<cts:option>case-insensitive</cts:option>
+	<cts:option>diacritic-insensitive</cts:option>
+	<cts:option>punctuation-insensitive</cts:option>
+	<cts:option>whitespace-insensitive</cts:option>
+	<cts:option>stemmed</cts:option>
+      </cts:word-query></reverse-query></meta><name>Betazed</name><description/></resource>

@@ -20,6 +20,11 @@
 	<sem:predicate>/fictional_universe/character_romantically_involved_with</sem:predicate>
 	<sem:object>/en/tora_ziyal</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/elim_garak</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Elim Garak is a fictional character from the television series Star Trek: Deep Space Nine, in which he is portrayed by Andrew J. Robinson. In the series, Garak is an exiled spy from the Cardassian Union and a former member of the feared Cardassian intelligence group called the Obsidian Order. Garak was exiled to the space station that became known as Deep Space Nine and established a tailoring business there. While during most episodes of the series, he is indeed a harmless tailor, he sometimes wilfully or coincidentally plays a role in covert operations on the side of the United Federation of Planets running Deep Space Nine. Occasionally, other Cardassians warn Federation personnel that he would be "a very dangerous man with a traitorous mind", but all in all he plays a rather positive, though sometimes a bit shady and sinister role during the series.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Elim Garak</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -27,4 +32,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Elim Garak</name><birth-place/><various-species><species>Cardassian</species></various-species><organizations/><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Elim Garak</name><birth-place/><gender>Male</gender><various-species><species>Cardassian</species></various-species><organizations/><ranks/><description>Elim Garak is a fictional character from the television series Star Trek: Deep Space Nine, in which he is portrayed by Andrew J. Robinson. In the series, Garak is an exiled spy from the Cardassian Union and a former member of the feared Cardassian intelligence group called the Obsidian Order. Garak was exiled to the space station that became known as Deep Space Nine and established a tailoring business there. While during most episodes of the series, he is indeed a harmless tailor, he sometimes wilfully or coincidentally plays a role in covert operations on the side of the United Federation of Planets running Deep Space Nine. Occasionally, other Cardassians warn Federation personnel that he would be "a very dangerous man with a traitorous mind", but all in all he plays a rather positive, though sometimes a bit shady and sinister role during the series.</description></resource>

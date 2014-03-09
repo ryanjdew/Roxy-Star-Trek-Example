@@ -20,6 +20,11 @@
 	<sem:predicate>/fictional_universe/character_sibling</sem:predicate>
 	<sem:object>/en/rom</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/quark</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>Quark is a fictional character in the American television series Star Trek: Deep Space Nine. The character, which was played by Armin Shimerman, was depicted as a member of an extraterrestrial race known as the Ferengi, who are stereotypically crony-capitalist and motivated only by profit.</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">Quark</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -27,4 +32,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Quark</name><birth-place/><various-species><species>Ferengi</species></various-species><organizations/><ranks/><description/></resource>
+      </cts:word-query></reverse-query></meta><name>Quark</name><birth-place/><gender>Male</gender><various-species><species>Ferengi</species></various-species><organizations/><ranks/><description>Quark is a fictional character in the American television series Star Trek: Deep Space Nine. The character, which was played by Armin Shimerman, was depicted as a member of an extraterrestrial race known as the Ferengi, who are stereotypically crony-capitalist and motivated only by profit.</description></resource>

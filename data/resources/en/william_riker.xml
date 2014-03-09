@@ -30,6 +30,11 @@
 	<sem:predicate>/fictional_universe/character_rank</sem:predicate>
 	<sem:object>/m/0bd89d</sem:object>
       </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/william_riker</sem:subject>
+	<sem:predicate>/common/topic/description</sem:predicate>
+	<sem:object>William Riker is a fictional character from the 2008 television short film Star Trek: Chains of Betrayal</sem:object>
+      </sem:triple>
     </sem:triples><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
 	<cts:text xml:lang="en">William Riker</cts:text>
 	<cts:option>case-insensitive</cts:option>
@@ -37,4 +42,4 @@
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>William Riker</name><birth-place/><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks><rank>Commander</rank><rank>Captain</rank></ranks><description/></resource>
+      </cts:word-query></reverse-query></meta><name>William Riker</name><birth-place/><gender>Male</gender><various-species><species>Human</species></various-species><organizations><organization>Starfleet</organization></organizations><ranks><rank>Commander</rank><rank>Captain</rank></ranks><description>William Riker is a fictional character from the 2008 television short film Star Trek: Chains of Betrayal</description></resource>

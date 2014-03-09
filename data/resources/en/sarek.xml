@@ -22,6 +22,11 @@
       </sem:triple>
       <sem:triple>
 	<sem:subject>/en/sarek</sem:subject>
+	<sem:predicate>/fictional_universe/character_place_of_birth</sem:predicate>
+	<sem:object>/m/045nxc</sem:object>
+      </sem:triple>
+      <sem:triple>
+	<sem:subject>/en/sarek</sem:subject>
 	<sem:predicate>/common/topic/description</sem:predicate>
 	<sem:object>Sarek is a fictional character in the Star Trek media franchise. He is a Vulcan astrophysicist, the Vulcan ambassador to the United Federation of Planets, and father of Spock. The character was originated by Mark Lenard in the 1967 episode "Journey to Babel". Lenard previously portrayed a Romulan Commander in another episode of the original series, 1966's "Balance of Terror".
 Actor Jonathan Simpson played a younger Sarek in a brief scene in Star Trek V: The Final Frontier, with voice-over provided by Lenard. Ben Cross portrayed Sarek in the 2009 motion picture Star Trek.
@@ -34,6 +39,6 @@ The character appears in the original Star Trek series, the animated series, fou
 	<cts:option>punctuation-insensitive</cts:option>
 	<cts:option>whitespace-insensitive</cts:option>
 	<cts:option>stemmed</cts:option>
-      </cts:word-query></reverse-query></meta><name>Sarek</name><birth-place/><various-species><species>Vulcan</species></various-species><organizations><organization>United Federation of Planets</organization></organizations><ranks/><description>Sarek is a fictional character in the Star Trek media franchise. He is a Vulcan astrophysicist, the Vulcan ambassador to the United Federation of Planets, and father of Spock. The character was originated by Mark Lenard in the 1967 episode "Journey to Babel". Lenard previously portrayed a Romulan Commander in another episode of the original series, 1966's "Balance of Terror".
+      </cts:word-query></reverse-query></meta><name>Sarek</name><birth-place>Vulcan</birth-place><gender>Male</gender><various-species><species>Vulcan</species></various-species><organizations><organization>United Federation of Planets</organization></organizations><ranks/><description>Sarek is a fictional character in the Star Trek media franchise. He is a Vulcan astrophysicist, the Vulcan ambassador to the United Federation of Planets, and father of Spock. The character was originated by Mark Lenard in the 1967 episode "Journey to Babel". Lenard previously portrayed a Romulan Commander in another episode of the original series, 1966's "Balance of Terror".
 Actor Jonathan Simpson played a younger Sarek in a brief scene in Star Trek V: The Final Frontier, with voice-over provided by Lenard. Ben Cross portrayed Sarek in the 2009 motion picture Star Trek.
 The character appears in the original Star Trek series, the animated series, four Star Trek movies, two episodes of Star Trek: The Next Generation, and numerous Star Trek novels and comics.</description></resource>
