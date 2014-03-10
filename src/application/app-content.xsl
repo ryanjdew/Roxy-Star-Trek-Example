@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="2.0" exclude-result-prefixes="html" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:_1="http://marklogic.com/semantics" xmlns:_2="http://marklogic.com/cts">
+<xsl:stylesheet version="2.0" exclude-result-prefixes="html" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:_2="http://marklogic.com/cts" xmlns:_1="http://marklogic.com/semantics">
   <xsl:output omit-xml-declaration="yes" indent="yes"/>
   <xsl:template match="meta"/>
   <xsl:template match="reverse-query"/>

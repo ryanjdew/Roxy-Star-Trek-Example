@@ -13,11 +13,16 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-/*  DUSK THEME */
+/*  DAWN THEME */
 body {
-  color: rgb(50,50,50);
-  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: rgb(242,242,242);
+  background-image: url('skins/dawn/bg.png');
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  
+  font-family: Georgia, Palatino, "Times New Roman", serif;
+  font-size: 14px;
+  color: #333;
 }
 body p {
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -36,10 +41,18 @@ a:hover {
 a.external-link {
   color: rgb(0,100,160);
 }
+
 #logo {
   font-weight:bold;
+  font-family: Helvetica, Arial, sans-serif;
   font-size:24px;
   line-height:28px;
+  font-weight: lighter;
+  letter-spacing: -1px;
+  display: block;
+  padding: 0 20px;
+  border-width: 8px;
+  border-style: none none none solid;
 }
 #logo a {
   color: rgb(130,130,130);
@@ -57,7 +70,7 @@ a.external-link {
 .header,
 .footer {
   color: rgb(75,75,75);
-  background: rgb(210,210,210);
+  background: #f3e499;
 }
 .header {
   -moz-border-radius-topleft: 5px;
@@ -72,22 +85,14 @@ a.external-link {
 #content h2 {
 	margin: 14px 4px;
 }
-.footer {
+#footer {
   color: rgb(150,150,150);
-  -moz-border-radius-bottomleft: 5px;
-  -moz-border-radius-bottomright: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -webkit-border-bottom-right-radius: 5px;
 }
-.footer a {
+#footer a {
   color: rgb(100,100,100);
 }
-
-.footer a:hover {
+#footer a:hover {
   color: rgb(50,50,50);
-}
-#footer p {
-  padding: 14px;
 }
 .pipe {
   border-left: 1px solid rgb(175,175,175);
@@ -98,17 +103,18 @@ a.external-link {
   float: right;
 }
 #search, #sidebar-container, #widget-bar, #topbar, #content-area-container, #footer, #widget-bar-01, #widget-bar-02, #widget-box {
-	background:none repeat scroll 0 0 gainsboro;
-}	
-.sidebar {
-	font-size:12px;
-	line-height:14px;
+	background:none repeat scroll 0 0 #f3e499;
 }
 
 /* Chiclet styles in sidebar widget */
 .sidebar .chiclet {
+  width: 205px;    
   color: white;
-  background: url('images/facet_green.png') left top repeat-x;
+  text-shadow: #c08719 1px 1px 0;
+  background: orange;
+  margin: 10px 0;
+  border-left: solid 8px #ac7916;
+  font-weight: bold;
 }
 .sidebar .chiclet .close-chiclet a {
   background: url('images/facet_close.png') no-repeat;
@@ -144,18 +150,15 @@ a.external-link {
     display: none;
     border-radius: 5px 5px 5px 5px;
     margin-top: 5px;
-    background: url("/application/images/icon-exclamation-red.png")  14px 14px no-repeat #E3E3E3;
+    background: url("/application/images/icon-exclamation-red.png")  14px 14px no-repeat #F3E499;
 }
 
 #mlerror.shown {
-	  display: block;
-}
-
-.feature-image {
-  border: 3px solid rgb(50,50,50);
+    display: block;
 }
 
 /* DETAIL PAGE CONTENT */
+
 .detail .box {
   font-size: .9em;
   background: rgb(229,243,255);
@@ -165,35 +168,34 @@ a.external-link {
 }
 
 .offscreen-control {
-  background-color: #CB7221;
-  border: solid 1px black;
+  background-color: #FFBC80;
+  border: solid 1px #333333;
 }
 
 .offscreen-arrow {
-  background: url("skins/dusk/boxarrow_dusk.png") repeat scroll 0 0 transparent;
+  background: url("skins/dawn/boxarrow_dawn.png") repeat scroll 0 0 transparent;
 }
 
 .offscreen .tipdown{
-  background: url(skins/dusk/tipdown3-btn_dusk.png) no-repeat 0 -10px;
+  background: url(skins/dawn/tipdown3-btn_dawn.png) no-repeat 0 -10px;
 }
 
 .offscreen-content {
-  background-color: #CB7221;
-  border: solid 1px black;
-  color: #222;
+  background-color: #FFBC80;
+  border: solid 1px #333333;
 }
 .map_title {
     border-bottom: 1px solid #C8C8C8;
-    background-color: #DCDCDC;
+    background-color: #f3e499;
 }
 .map_title h3 {
     color: #000000;
 }
 
 #loading {
-    z-index:100;
-    
-	left: 50%;
+	z-index:100;
+	
+    left: 50%;
     top: 50%;
     
     margin-top: -40px;
@@ -208,7 +210,7 @@ a.external-link {
     width: 80px;
     height: 80px;
     
-    border:5px solid gainsboro;    
+    border:5px solid #f3e499;    
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;    

@@ -22,59 +22,62 @@ declare %roxy:params("query=xs:string") function sem-int:get(
     let $output-types :=
         map:put($context,"output-types","application/xml") 
     let $query := element query {normalize-space(map:get($params,"query"))}
-    let $reverse-query := cts:reverse-query($query)
-    let $predicates := 
+    return
+    if ($query eq '')
+    then
+      document {
+        <result/>
+      }
+    else
+      let $reverse-query := cts:reverse-query($query)
+      let $predicates := 
           cts:search(/predicate,$reverse-query)
-    let $resources := 
+      let $resources := 
           cts:search(/resource,$reverse-query)
-    let $matching-query-text :=
-          cts:highlight(
-            $query,
-            cts:or-query((
-              ($predicates,$resources)/reverse-query/cts:* ! cts:query(.)
-            )),
-            let $matching-item := 
-              sem-int:appropriate-item(($predicates,$resources),$cts:queries)
-            return 
-              element match {
-                attribute iri {fn:string($matching-item/@uri)},
-                attribute type {fn:local-name($matching-item)},
-                $cts:text
-              }
-          )
-    let $match-ratio :=
-        if ($query eq '')
+      let $predicates-exist as xs:boolean := exists($predicates)
+      let $matches-found as xs:boolean := $predicates-exist or exists($resources)
+      let $matching-query-text :=
+          if ($matches-found)
+          then
+            cts:highlight(
+              $query,
+              cts:or-query((
+                ($predicates,$resources)//reverse-query/cts:* ! cts:query(.)
+              )),
+              let $matching-item := 
+                sem-int:appropriate-item(($predicates,$resources),$cts:queries)
+              return 
+                element match {
+                  attribute iri {fn:string($matching-item/@uri)},
+                  attribute type {fn:local-name($matching-item)},
+                  $cts:text
+                }
+            )
+          else
+            $query
+      let $match-ratio :=
+        if ($query eq '' and $matches-found)
         then
           0
         else
           sem-int:word-count(fn:string-join($matching-query-text/match," ")) div sem-int:word-count($query)
-    let $matching-triples :=
-          cts:search(//sem:triple,
-            if ($predicates or $resources)
-            then 
-              let $resource-iris := $matching-query-text/match[@type eq "resource"]/@iri ! sem:iri(.),
-                  $predicate-iris := $matching-query-text/match[@type eq "predicate"]/@iri ! sem:iri(.)
-              return
-                cts:or-query((
-                  cts:triple-range-query(
-                    $resource-iris,
-                    $predicate-iris,
-                    (),
-                    "=",
-                    (),
-                    16
-                  ),
-                  cts:triple-range-query(
-                    (),
-                    $predicate-iris,
-                    $resource-iris,
-                    "=",
-                    (),
-                    8
-                  )
-                ))
-            else ()
-        )
+      let $matching-triples :=
+        if ($matches-found)
+        then
+          let $resource-iris := $matching-query-text/match[@type eq "resource"]/@iri ! sem:iri(.),
+              $predicate-iris := $matching-query-text/match[@type eq "predicate"]/@iri ! sem:iri(.)
+          return
+            cts:search(//sem:triple,
+              cts:triple-range-query(
+                $resource-iris,
+                $predicate-iris,
+                (),
+                "=",
+                (),
+                16
+              )
+            )[1 to 5]
+        else ()
     return 
       document { 
         element result {
@@ -84,9 +87,37 @@ declare %roxy:params("query=xs:string") function sem-int:get(
             attribute comprehension {$match-ratio},
             $matching-query-text/node()
           },
-          for $triple in $matching-triples
+          let $triples := 
+              if ($predicates-exist)
+              then $matching-triples
+              else ($matching-triples/root(.) union ())/resource/meta/sem:triples/sem:triple[1]
+          for $triple in $triples
+          let $object-data :=
+            cts:search(/resource,
+              cts:element-attribute-value-query(xs:QName('resource'),xs:QName('uri'),$triple/sem:object,"exact"),
+              "unfiltered"
+            )/(* except meta)
           return
-            element matching-triple {sem-int:english-readable-triple($triple)}
+            element matching-triple {
+              element human-readable{
+                if ($predicates-exist)
+                then 
+                  sem-int:human-readable-triple($triple)
+                else 
+                  ()
+              },
+              element subject {
+                let $resource := root($triple)/resource
+                return
+                  $resource/* except $resource/meta
+              },
+              if ($predicates-exist and exists($object-data))
+              then
+                element object {
+                  $object-data
+                }
+              else ()
+            }
         }
       } 
 };
@@ -94,12 +125,12 @@ declare %roxy:params("query=xs:string") function sem-int:get(
 (:
 Take a triple and make it more human readable.
 :)
-declare %private function sem-int:english-readable-triple($sem-triple as element(sem:triple)) as xs:string {
+declare %private function sem-int:human-readable-triple($sem-triple as element(sem:triple)) as xs:string {
   let $subject-name := sem-int:resource-name($sem-triple/..)
-  let $object-triples := cts:search(/sem:triples,
-                          cts:element-attribute-value-query(xs:QName('sem:triples'),xs:QName('uri'),$sem-triple/sem:object,"exact"),
+  let $object-triples := cts:search(/resource,
+                          cts:element-attribute-value-query(xs:QName('resource'),xs:QName('uri'),$sem-triple/sem:object,"exact"),
                           "unfiltered"
-                        )
+                        )/meta/sem:triples
   let $object-name := sem-int:resource-name($object-triples)
   let $predicate-phrase := cts:search(/predicate,
                             cts:element-attribute-value-query(xs:QName('predicate'),xs:QName('uri'),$sem-triple/sem:predicate,"exact"),

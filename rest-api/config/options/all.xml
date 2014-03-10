@@ -77,6 +77,11 @@
     <search:max-snippet-chars>150</search:max-snippet-chars>
     <search:per-match-tokens>20</search:per-match-tokens>
   </search:transform-results>
+  <search:default-suggestion-source>
+    <search:range collation="http://marklogic.com/collation/" type="xs:string" facet="false">
+      <search:element ns="" name="name"/>
+    </search:range>
+  </search:default-suggestion-source>
   <search:return-query>1</search:return-query>
   <search:operator name="results">
     <search:state name="compact">

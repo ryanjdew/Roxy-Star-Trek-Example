@@ -1,3 +1,19 @@
 /* Add any styles here to override the CSS in your built app.
  * This file will survive redeployment
  */
+body,#loading{background-color:#000;color:#fff;}
+#logo a,.user {color:#678dbc;}
+#sidebar-container,#sidebar,#search,#topbar,#topbar .widget-slot,
+#content-area-container,#content-area,#footer{border:none;background:inherit;}
+ .chiclet:nth-child(1n+0) {background-color:#c2685b;}
+ .chiclet:nth-child(2n+0) {background-color:#95a0ef;}
+ .chiclet:nth-child(3n+0),#update-query {background-color:#dab28e;}
+ .chiclet:nth-child(4n+0) {background-color:#edc56c;}
+ dt,dd {float:left;}
+ dt, #widget-1 h3{clear:both;color:#dbaf57;}
+ .sem-col1,.sem-col2 {float:left;text-overflow:ellipsis;overflow:hidden;width:48%;}
+ .sem-col1{clear:both;}
+ #widget-1 {overflow:hidden;text-overflow:ellipsis;}
+ a {color:#a44f4d;}
+ .count{color:#fff;}
+ div.facet-list div.facet-title-label,.widget-slot h3,#update-query {color:#fff;}

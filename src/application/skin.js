@@ -17,13 +17,13 @@ if (typeof Highcharts !== 'undefined') {
 
 	Highcharts.theme = {
 	   /* LINE/BAR/COLUMN/SLICE COLORS - only used for slices for Plex, if we add multiple data sets in future releases, these colors will work with the rendering of other sets */
-	   colors: ['#395C9B', '#923532', '#7B972E', '#6A538D', '#3B83A1', '#CB7221', '#F2E200'],
+	   colors: ['#A1CE93', '#B280FF', '#80DAFF', '#FFBC80', '#FFF780', '#80A7FF', '#FF8380'],
 	    
 	   /* CHART TITLE */
 	   title: {
 	      style: {
 	         color: '#000',
-	         font: 'bold 16px "Lucida Grande", Helvetica, Arial, sans-serif'
+	         font: 'bold 16px Georgia, Palatino, "Times New Roman", serif'
 	      }
 	   },
 	
@@ -31,7 +31,7 @@ if (typeof Highcharts !== 'undefined') {
 	   subtitle: {
 	      style: {
 	         color: '#666666',
-	         font: 'bold 12px "Lucida Grande", Helvetica, Arial, sans-serif'
+	         font: 'bold 12px Georgia, Palatino, "Times New Roman", serif'
 	      }
 	   },
 	    
@@ -42,13 +42,13 @@ if (typeof Highcharts !== 'undefined') {
 	      labels: {
 	         style: {
 	            color: '#000',
-	            font: '11px "Lucida Grande", Helvetica, Arial, sans-serif'
+	            font: '11px Georgia, Palatino, "Times New Roman", serif'
 	         }
 	      },
 	      title: {
 	         style: {
 	            color: '#333',
-	            font: 'bold 12px "Lucida Grande", Helvetica, Arial, sans-serif'
+	            font: 'bold 12px Georgia, Palatino, "Times New Roman", serif'
 	         }
 	      }
 	   },
@@ -63,13 +63,13 @@ if (typeof Highcharts !== 'undefined') {
 	      labels: {
 	         style: {
 	            color: '#000',
-	            font: '11px "Lucida Grande", Helvetica, Arial, sans-serif'
+	            font: '11px Georgia, Palatino, "Times New Roman", serif'
 	         }
 	      },
 	      title: {
 	         style: {
 	            color: '#333',
-	            font: 'bold 12px "Lucida Grande", Helvetica, Arial, sans-serif'
+	            font: 'bold 12px Georgia, Palatino, "Times New Roman", serif'
 	         }
 	      }
 	   },
@@ -88,7 +88,7 @@ if (typeof Highcharts !== 'undefined') {
 	           },
 			   states: {
 			       select: {
-			           fillColor: '#CB7221',
+			           fillColor: '#FFBC80',
 			           radius: 6,
 			           lineWidth: 3
 			       }
@@ -101,7 +101,7 @@ if (typeof Highcharts !== 'undefined') {
 	          shadow: false,
 			  states: {
 			      select: {
-			          color: '#CB7221'
+			          color: '#FFBC80'
 			      }
 			  }
 	       },
@@ -112,7 +112,7 @@ if (typeof Highcharts !== 'undefined') {
 	          shadow: false,
 			  states: {
 			      select: {
-			          color: '#CB7221'
+			          color: '#FFBC80'
 			      }
 			  }
 	       },
@@ -127,9 +127,9 @@ if (typeof Highcharts !== 'undefined') {
 	    
 	}; 
 	if (Highcharts.setOptions !== undefined) {
-		Highcharts.setOptions(Highcharts.theme);
+		Highcharts.setOptions(Highcharts.theme);	
 		// work-around for HighCharts bug: https://github.com/highslide-software/highcharts.com/issues/1071 
-		Highcharts.getOptions().colors = ['#395C9B', '#923532', '#7B972E', '#6A538D', '#3B83A1', '#CB7221', '#F2E200'];
+		Highcharts.getOptions().colors = ['#A1CE93', '#B280FF', '#80DAFF', '#FFBC80', '#FFF780', '#80A7FF', '#FF8380'];
 	}
 
 }

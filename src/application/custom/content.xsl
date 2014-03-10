@@ -69,7 +69,8 @@ limitations under the License.
     <p><xsl:copy-of select="search:snippet(.,search:parse(&quot; &quot;))"/>
     <a href="/v1/documents?uri={xdmp:node-uri(.)}" target="document">more...</a></p></div>
 </xsl:template-->
-  
+<xsl:template match="meta"/>
+<xsl:template match="reverse-query"/>
 <!-- uncomment to style example oscars data, review /application/app-content.xsl, the following is an example for Oscars -->
  <!-- xsl:template match="_1:name">
     <h1 class="render-film-title">ACTOR: <xsl:apply-templates/></h1>
