@@ -229,8 +229,10 @@ return
       "/predicates"||$predicate||".xml",
       element predicate {
         attribute uri {$predicate},
-        element reverse-query{
-          cts:word-query(fn:string($name),$query-options)
+        element meta {
+          element reverse-query{
+            cts:word-query(fn:string($name),$query-options)
+          }
         },
         element phrase {fn:string($name)}
       }
