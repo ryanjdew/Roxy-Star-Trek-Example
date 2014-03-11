@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<predicate uri="/fictional_universe/character_species"><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
+<predicate uri="/fictional_universe/character_species"><meta><reverse-query><cts:word-query xmlns:cts="http://marklogic.com/cts">
       <cts:text xml:lang="en">species</cts:text>
       <cts:option>case-insensitive</cts:option>
       <cts:option>diacritic-insensitive</cts:option>
       <cts:option>punctuation-insensitive</cts:option>
       <cts:option>whitespace-insensitive</cts:option>
       <cts:option>stemmed</cts:option>
-    </cts:word-query></reverse-query><phrase>species</phrase></predicate>
+    </cts:word-query></reverse-query></meta><phrase>species</phrase></predicate>

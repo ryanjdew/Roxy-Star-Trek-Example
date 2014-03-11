@@ -9,6 +9,10 @@
      <content-source>/index.html</content-source>
   </content>
   <content>
+     <uri-step>edit-related-phrases</uri-step>
+     <content-source>/application/custom/edit-related-phrases.html</content-source>
+  </content>
+  <content>
      <uri-step>help</uri-step>
      <content-source>/application/custom/help.html</content-source>
   </content>

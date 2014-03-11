@@ -96,7 +96,9 @@ declare %roxy:params("query=xs:string") function sem-int:get(
             cts:search(/resource,
               cts:element-attribute-value-query(xs:QName('resource'),xs:QName('uri'),$triple/sem:object,"exact"),
               "unfiltered"
-            )/(* except meta)
+            )/(@*|*)
+          let $predicate-uri := fn:string($triple/sem:predicate)
+          let $predicate-data := $predicates[@uri eq $predicate-uri]/(@*|*)
           return
             element matching-triple {
               element human-readable{
@@ -106,17 +108,18 @@ declare %roxy:params("query=xs:string") function sem-int:get(
                 else 
                   ()
               },
-              element subject {
-                let $resource := root($triple)/resource
-                return
-                  $resource/* except $resource/meta
+              element subj {
+                root($triple)/resource/(@*|*)
               },
               if ($predicates-exist and exists($object-data))
-              then
-                element object {
+              then (
+                element pred {
+                  $predicate-data
+                },
+                element obj {
                   $object-data
                 }
-              else ()
+              ) else ()
             }
         }
       } 
@@ -184,10 +187,10 @@ declare %roxy:params("uri=xs:string") function sem-int:put(
     (: get 'input-types' to use in content negotiation :)
     let $input-types := map:get($context,"input-types")
     let $negotiate := 
-        if ($input-types = "application/xml")
+        if ($input-types = ("application/xml","application/json"))
         then () (: process, insert/update :) 
         else error((),"ACK",
-          "Invalid type, accepts application/xml only")
+          "Invalid type, accepts application/xml or application/json only")
     let $uri := map:get($params,"uri")
     let $item :=
           cts:search(fn:collection()/*[node-name(.) = $item-qns],
@@ -197,18 +200,17 @@ declare %roxy:params("uri=xs:string") function sem-int:put(
     return 
       if (exists($uri) and exists($item))
       then (
-        let $phrases := $input/phrases/phrase
-        return (
-          xdmp:document-insert(
-            xdmp:node-uri($item),
-            element {node-name($item)} {
-              $item/@*,
-              element reverse-query {
-                $phrases ! cts:word-query(string(.),$query-options)
-              },
-              $phrases[1]
+        let $phrases := 
+            if ($input-types eq "application/xml") 
+            then $input/phrases/phrase
+            else 
+              json:array-values(map:get(xdmp:from-json($input),"phrases"))
+        let $new-reverse-query := 
+            element reverse-query {
+              $phrases ! cts:word-query(string(.),$query-options)
             }
-          ),
+        return (
+          xdmp:node-replace($item/meta/reverse-query,$new-reverse-query),
           document {
             element response {
               element success{true()}
