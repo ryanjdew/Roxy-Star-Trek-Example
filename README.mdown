@@ -1,5 +1,10 @@
+# Star Trek Demo
+This application was built with MarkLogic's Application Builder and was customized to use the Semantic Interpreter REST API extion described below. If you search for people, such as "Tasha Yar", the info panel will populate with information about Tasha Yar. There will also be a link to edit the phrases associated with the resource. For example, you can add "Tasha" so it will recognize that searches conatining "Tasha" are talking about Tasha Yar. 
+
+If you search for the relationships, such as "Tasha Yar romantically involved with", you will see information about all parties involved. Then you can then edit the phrases associated with each part of the triple. In the mentioned example that would be "Tasha Yar", "romantically involved with", and "Data". 
+
 # Semantic Interpreter
-This REST API makes use of MarkLogic's reverse queries and triple index to provide human readable answers to human readable queries. The example content provided is derived from Star Trek character data retrieved from [Freebase][http://freebase.com]
+This REST API makes use of MarkLogic's reverse queries and triple index to provide human readable answers to human readable queries. 
 
 ## Getting Started
 
