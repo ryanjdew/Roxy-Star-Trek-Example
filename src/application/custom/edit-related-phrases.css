@@ -1,8 +1,9 @@
-#topbar,#widget-1 {height:inherit;overflow:inherit;width:870px;}
+#topbar,#topbar .widget-slot {height:inherit;overflow:inherit;width:870px;border:none;}
 .chiclet .close-chiclet a {
   background:url('/application/images/facet_close.png') no-repeat;
   display: inline-block;
   width:15px;
   height:15px;
 }
+
 .sem-col1,.sem-col2,.sem-col3 {float:left;text-overflow:ellipsis;overflow:hidden;width:32%;}

@@ -3,8 +3,11 @@
  */
 body,#loading{background-color:#000;color:#fff;}
 #logo a,.user {color:#678dbc;}
-#sidebar-container,#sidebar,#search,#topbar,#topbar .widget-slot,
+#sidebar-container,#sidebar,#search,
 #content-area-container,#content-area,#footer{border:none;background:inherit;}
+#topbar,#topbar .widget-slot {border:1px solid #95a0ef;border-radius:15px;}
+#topbar {background-color:#95a0ef;}
+#topbar .widget-slot {background-color:#000;}
 #update-query {background-image:none;}
  .chiclet:nth-child(1n+0) {background-color:#c2685b;}
  .chiclet:nth-child(2n+0) {background-color:#95a0ef;}
@@ -14,7 +17,7 @@ body,#loading{background-color:#000;color:#fff;}
  dt, #widget-1 h3{clear:both;color:#dbaf57;}
  .sem-col1,.sem-col2 {float:left;text-overflow:ellipsis;overflow:hidden;width:48%;}
  .sem-col1{clear:both;}
- #widget-1 {overflow:auto;text-overflow:ellipsis;border:1px solid #c2685b;;}
+ #widget-1 {overflow:auto;text-overflow:ellipsis;border:1px solid #c2685b;}
  a {color:#a44f4d;}
  .count{color:#fff;}
  div.facet-list div.facet-title-label,.widget-slot h3,#update-query {color:#fff;}
