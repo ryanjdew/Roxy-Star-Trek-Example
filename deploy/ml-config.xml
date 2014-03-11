@@ -129,35 +129,35 @@
           <scalar-type>string</scalar-type>
           <namespace-uri />
           <localname>birth-place</localname>
-          <collation>http://marklogic.com/collation/codepoint</collation>
+          <collation>http://marklogic.com/collation/</collation>
           <range-value-positions>false</range-value-positions>
         </range-element-index>
         <range-element-index>
           <scalar-type>string</scalar-type>
           <namespace-uri />
           <localname>organization</localname>
-          <collation>http://marklogic.com/collation/codepoint</collation>
+          <collation>http://marklogic.com/collation/</collation>
           <range-value-positions>false</range-value-positions>
         </range-element-index>
         <range-element-index>
           <scalar-type>string</scalar-type>
           <namespace-uri />
           <localname>species</localname>
-          <collation>http://marklogic.com/collation/codepoint</collation>
+          <collation>http://marklogic.com/collation/</collation>
           <range-value-positions>false</range-value-positions>
         </range-element-index>
         <range-element-index>
           <scalar-type>string</scalar-type>
           <namespace-uri />
           <localname>rank</localname>
-          <collation>http://marklogic.com/collation/codepoint</collation>
+          <collation>http://marklogic.com/collation/</collation>
           <range-value-positions>false</range-value-positions>
         </range-element-index>
         <range-element-index>
           <scalar-type>string</scalar-type>
           <namespace-uri />
           <localname>gender</localname>
-          <collation>http://marklogic.com/collation/codepoint</collation>
+          <collation>http://marklogic.com/collation/</collation>
           <range-value-positions>false</range-value-positions>
         </range-element-index>
       </range-element-indexes>
