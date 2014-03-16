@@ -1,5 +1,7 @@
+var SIP = SIP || {};
+
 SIP.edit_panel = true;
-function updatePhrases(phrases) {
+SIP.updatePhrases = function (phrases) {
   var phrases_xml = '<phrases>';
   phrases.find('.chiclet').each(function() {
     phrases_xml += "<phrase>" + $(this).text() + "</phrase>";
@@ -18,7 +20,7 @@ $(document).ready(function() {
     var phrases = $(this).parents("ul.sip-phrases"),
         phrase =  $(this).parents("li.sip-phrase");
     phrase.remove();
-    updatePhrases(phrases);
+    SIP.updatePhrases(phrases);
     event.preventDefault();
   });
   $( "#widget-1" ).on( "click", ".sip-phrases button[type='cancel']", function(event) {
@@ -29,7 +31,7 @@ $(document).ready(function() {
     var input = $(this).find('input').val(),
         phrases = $(this).parents("ul.sip-phrases");
     $(this).replaceWith('<li class="sip-phrase"><div class="chiclet"><div class="close-chiclet"><a href="#"></a></div>'+input+'</div></li>'); 
-    updatePhrases(phrases);
+    SIP.updatePhrases(phrases);
     event.preventDefault();
   });
   $( "#widget-1" ).on( "click", ".sip-phrases a.sip-add-phrase", function(event) {

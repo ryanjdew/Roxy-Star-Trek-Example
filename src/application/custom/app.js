@@ -2,9 +2,9 @@
  * This file will survive redeployment.
  */
 
- var SIP = {};
+var SIP = SIP || {};
 
-function resourceToHTML(resource, edit_panel){
+SIP.resourceToHTML = function(resource, edit_panel){
   var html = '';
   if (edit_panel && resource.length) {
     var uri = resource.attr("uri");
@@ -28,7 +28,7 @@ function resourceToHTML(resource, edit_panel){
   return html;
 };
 
-function getInfoPanel(query){
+SIP.getInfoPanel = function (query){
   SIP.edit_panel = (typeof SIP.edit_panel === "undefined") ? false : SIP.edit_panel;
   var edit_link = (SIP.edit_panel)?'':('(<a href="/content/edit-related-phrases?q='+encodeURI(query)+'">Edit Related Phrases</a>)');
   $("#widget-1").html('');
@@ -37,9 +37,9 @@ function getInfoPanel(query){
       function(data) {
         $(data).find("matching-triple").each(function(index) {
           var current_triple = $(this);
-          var col1 =  "<dl class='sem-col1'>"+resourceToHTML(current_triple.find("subj"),SIP.edit_panel)+"</dl>";
-          var col2 = (SIP.edit_panel)?"<dl class='sem-col2'>"+resourceToHTML(current_triple.find("pred"),SIP.edit_panel)+"</dl>":"";
-          var col3 =  "<dl class='sem-col"+((SIP.edit_panel)?'3':'2')+"'>"+resourceToHTML(current_triple.find("obj"),SIP.edit_panel)+"</dl>";
+          var col1 =  "<dl class='sem-col1'>"+SIP.resourceToHTML(current_triple.find("subj"),SIP.edit_panel)+"</dl>";
+          var col2 = (SIP.edit_panel)?"<dl class='sem-col2'>"+SIP.resourceToHTML(current_triple.find("pred"),SIP.edit_panel)+"</dl>":"";
+          var col3 =  "<dl class='sem-col"+((SIP.edit_panel)?'3':'2')+"'>"+SIP.resourceToHTML(current_triple.find("obj"),SIP.edit_panel)+"</dl>";
           $("#widget-1").append(
               "<h3>"+current_triple.find("human-readable").text()+" "+edit_link+"</h3>"+
               col1+
@@ -52,5 +52,5 @@ function getInfoPanel(query){
 };
 
 var widget = ML.createWidget($('#widget-1'), function (data) {
-  getInfoPanel(data.qtext);
+  SIP.getInfoPanel(data.qtext);
 });

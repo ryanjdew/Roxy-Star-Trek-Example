@@ -60,24 +60,28 @@ declare %roxy:params("query=xs:string") function sem-int:get(
         then
           0
         else
-          sem-int:word-count(fn:string-join($matching-query-text/match," ")) div sem-int:word-count($query)
+          sem-int:word-count(string-join($matching-query-text/match," ")) div sem-int:word-count($query)
       let $matching-triples :=
-        if ($matches-found)
+        if ($predicates-exist)
         then
           let $resource-iris := $matching-query-text/match[@type eq "resource"]/@iri ! sem:iri(.),
               $predicate-iris := $matching-query-text/match[@type eq "predicate"]/@iri ! sem:iri(.)
-          return
-            cts:search(//sem:triple,
-              cts:triple-range-query(
+          return 
+            sem-int:filter-reciprocal-triples(
+              cts:triples(
                 $resource-iris,
                 $predicate-iris,
+                ()
+              ),(
+              cts:triples(
                 (),
-                "=",
-                (),
-                16
-              )
-            )[1 to 5]
-        else ()
+                $predicate-iris,
+                $resource-iris
+              ))
+            )
+        else (
+          $resources/meta/sem:triples/sem:triple[1]/sem:triple(.)
+        )
     return 
       document { 
         element result {
@@ -87,29 +91,23 @@ declare %roxy:params("query=xs:string") function sem-int:get(
             attribute comprehension {$match-ratio},
             $matching-query-text/node()
           },
-          let $triples := 
-              if ($predicates-exist)
-              then $matching-triples
-              else ($matching-triples/root(.) union ())/resource/meta/sem:triples/sem:triple[1]
-          for $triple in $triples
-          let $object-data :=
-            cts:search(/resource,
-              cts:element-attribute-value-query(xs:QName('resource'),xs:QName('uri'),$triple/sem:object,"exact"),
-              "unfiltered"
-            )/(@*|*)
-          let $predicate-uri := fn:string($triple/sem:predicate)
-          let $predicate-data := $predicates[@uri eq $predicate-uri]/(@*|*)
+          for $triple in $matching-triples
+          let $subject-iri := sem:triple-subject($triple)
+          let $object-iri := sem:triple-object($triple)
+          let $object-data := sem-int:select-item($object-iri,$resources[@uri eq $object-iri])/(@*|*)
+          let $predicate-iri := sem:triple-predicate($triple)
+          let $predicate-data := sem-int:select-item($predicate-iri,$predicates[@uri eq $predicate-iri])/(@*|*)
           return
             element matching-triple {
               element human-readable{
                 if ($predicates-exist)
                 then 
-                  sem-int:human-readable-triple($triple)
+                  sem-int:human-readable-triple($triple,($resources,$predicates))
                 else 
                   ()
               },
               element subj {
-                root($triple)/resource/(@*|*)
+                sem-int:select-item($subject-iri,$resources[@uri eq $subject-iri])/(@*|*)
               },
               if ($predicates-exist and exists($object-data))
               then (
@@ -125,26 +123,59 @@ declare %roxy:params("query=xs:string") function sem-int:get(
       } 
 };
 
+declare %private function sem-int:filter-reciprocal-triples(
+  $triple-group-1 as sem:triple*, 
+  $triple-group-2 as sem:triple*
+) as sem:triple* {
+    $triple-group-1,
+   (for $triple in $triple-group-2
+    where not(
+            some $t in $triple-group-1 
+            satisfies sem:triple-object($triple) eq sem:triple-subject($t) 
+                      and sem:triple-predicate($triple) eq sem:triple-predicate($t)
+                      and sem:triple-subject($triple) eq sem:triple-object($t))
+    return $triple)
+};
+
+declare variable $content-qns as xs:QName+ := (xs:QName('predicate'),xs:QName('resource'));
+
 (:
 Take a triple and make it more human readable.
 :)
-declare %private function sem-int:human-readable-triple($sem-triple as element(sem:triple)) as xs:string {
-  let $subject-name := sem-int:resource-name($sem-triple/..)
-  let $object-triples := cts:search(/resource,
-                          cts:element-attribute-value-query(xs:QName('resource'),xs:QName('uri'),$sem-triple/sem:object,"exact"),
-                          "unfiltered"
-                        )/meta/sem:triples
-  let $object-name := sem-int:resource-name($object-triples)
-  let $predicate-phrase := cts:search(/predicate,
-                            cts:element-attribute-value-query(xs:QName('predicate'),xs:QName('uri'),$sem-triple/sem:predicate,"exact"),
-                            "unfiltered"
-                          )/phrase
-  return fn:normalize-space(fn:string-join(($subject-name,$predicate-phrase,$object-name)," "))
+declare %private function sem-int:human-readable-triple($sem-triple as sem:triple,$matches as element()*) as xs:string {
+  fn:normalize-space(
+    fn:string-join(
+      for $part in (sem:triple-subject($sem-triple),sem:triple-predicate($sem-triple),sem:triple-object($sem-triple)) 
+      let $element := sem-int:select-item($part,$matches[@uri eq $part])
+      return
+        sem-int:resource-name($element)
+      ,
+      " "
+    )
+  )
 };
 
+
+
 (: get a name associated with a resource :)
-declare %private function sem-int:resource-name($sem-triples as element(sem:triples)?) as xs:string? {
-  $sem-triples/sem:triple[sem:predicate eq "name"]/sem:object
+declare %private function sem-int:select-item(
+  $triple-part as item(), 
+  $element as element()?
+) as element()? {
+  if ($element)
+  then 
+    $element
+  else
+    cts:search(/*[node-name(.) = $content-qns],
+      cts:element-attribute-value-query($content-qns,xs:QName('uri'),$triple-part,"exact"),
+      "unfiltered"
+    )
+};
+
+
+(: get a name associated with a resource :)
+declare %private function sem-int:resource-name($element as element()?) as xs:string? {
+  ($element/(name|phrase))[1]
 };
 
 declare %private function sem-int:word-count($string as xs:string) as xs:integer {
