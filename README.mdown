@@ -13,8 +13,8 @@ This REST API makes use of MarkLogic's reverse queries and triple index to provi
 Run the following commands for initial setup. 
 
 <pre><code>ml local bootstrap</code></pre>
-<pre><code>ml local content</code></pre>
-<pre><code>ml local modules</code></pre>
+<pre><code>ml local deploy content</code></pre>
+<pre><code>ml local deploy modules</code></pre>
 
 Those commmands will create the semantic-interpreter REST API extension.
 

@@ -20,7 +20,7 @@ SIP.resourceToHTML = function(resource, edit_panel){
     var current_item = $(this);
     var children = current_item.children();
     var children_values = [];
-    children.each(function() { children_values.push($(this).text()) });
+    children.each(function() { children_values.push($(this).text()); });
     html += 
           '<dt>'+ this.tagName.toLowerCase() +':&nbsp;</dt>'+
           '<dd>' + ((children.length > 1) ? children_values.join(", ") : current_item.text()) +'</dd>';
@@ -37,14 +37,20 @@ SIP.getInfoPanel = function (query){
       function(data) {
         $(data).find("matching-triple").each(function(index) {
           var current_triple = $(this);
-          var col1 =  "<dl class='sem-col1'>"+SIP.resourceToHTML(current_triple.find("subj"),SIP.edit_panel)+"</dl>";
-          var col2 = (SIP.edit_panel)?"<dl class='sem-col2'>"+SIP.resourceToHTML(current_triple.find("pred"),SIP.edit_panel)+"</dl>":"";
-          var col3 =  "<dl class='sem-col"+((SIP.edit_panel)?'3':'2')+"'>"+SIP.resourceToHTML(current_triple.find("obj"),SIP.edit_panel)+"</dl>";
+          var col1 =  $('<dl/>').
+                        addClass('sem-col1').
+                        html(SIP.resourceToHTML(current_triple.find("subj"),SIP.edit_panel));
+          var col2 = (SIP.edit_panel)? $('<dl/>').
+                        addClass('sem-col2').
+                        html(SIP.resourceToHTML(current_triple.find("pred"),SIP.edit_panel)):"";
+          var col3 =  $('<dl/>').
+                        addClass('sem-col'+((SIP.edit_panel)?'3':'2')).
+                        html(SIP.resourceToHTML(current_triple.find("obj"),SIP.edit_panel));
           $("#widget-1").append(
-              "<h3>"+current_triple.find("human-readable").text()+" "+edit_link+"</h3>"+
-              col1+
-              col2+
-              col3);
+              $("<h3/>").
+                text(current_triple.find("human-readable").text()+" ").
+                append(edit_link)
+            ).append(col1).append(col2).append(col3);
         });
       },
       "xml"
