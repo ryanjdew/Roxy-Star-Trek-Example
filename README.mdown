@@ -3,7 +3,7 @@ This application was built with MarkLogic's Application Builder and was customiz
 
 If you search for the relationships, such as "Tasha Yar romantically involved with", you will see information about all parties involved. Then you can then edit the phrases associated with each part of the triple. In the mentioned example that would be "Tasha Yar", "romantically involved with", and "Data".
 
-The example content provided is derived from Star Trek character data retrieved from Freebase 
+The example content provided is derived from Star Trek character data retrieved from [Freebase](http://freebase.com)
 
 # Semantic Interpreter
 This REST API makes use of MarkLogic's reverse queries and triple index to provide human readable answers to human readable queries. 
@@ -47,4 +47,3 @@ You can change the words/phrases associated with a resource (subject/object) or 
 Now if you run the query containing "dating" you will see that you now get much better results.
 
 The comprehension attribute on the parsed query is a simple indicator to help you determine how well your query was understood by the system.
-[Freebase]:[http://freebase.com]
